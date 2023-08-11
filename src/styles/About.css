@@ -1,0 +1,16 @@
+.about-cards {
+    row-gap: 4em;
+    margin: 2em;
+    font-size: 18px;
+    animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
