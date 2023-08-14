@@ -20,7 +20,7 @@ const About = () => {
 
            
             <p>I started at CodeClan in November 2022 and I have gone from having a small amount of coding knowledge to being able to build full-stack websites in a matter of weeks. 
-                    I have discovered that I have a flair for front-end but I still have skills to share in back-end development too! On top of studying, I have been attending networking events and workshops whilst 
+                    I have discovered that I have a flair for front-end but I also have skills to share in back-end development too! On top of studying, I have been attending networking events and workshops whilst 
                     keeping my LinkedIn page up to date and building my portfolio site (psst - you’re already here!). Today, I am doing freelance work for English learning company, Intrepid English.</p>
                    
                   
