@@ -7,12 +7,20 @@
                 "body": "#FFFFFF",
                 "text": "#000000",
                 "button": {
-                    "text": "#FFFFFF",
-                    "background": "#000000"
+                    "text": "#000000",
+                    "background": "#FFFFFF"
                 },
                 "link": {
                     "text": "teal",
                     "opacity": 1
+                },
+                "section": {
+                    "text":"#FFFFFF",
+                    "background":"#2c3e50",
+                    "link": {
+                        "text": "yellow",
+                        "opacity": 1
+                    }
                 }
             },
             "font": "Courier"
@@ -25,12 +33,20 @@
                 "text": "#FFFFFF",
                 "box-shadow": "#EFEFEF",
                 "button": {
-                    "text": "#000000",
-                    "background": "#FFFFFF"
+                    "text": "#FFFFFF",
+                    "background": "#2c3e50"
                 },
                 "link": {
-                    "text": "teal",
+                    "text": "yellow",
                     "opacity": 1
+                },
+                "section": {
+                    "text":"#000000",
+                    "background":"#FFFFFF",
+                    "link": {
+                        "text": "teal",
+                        "opacity": 1
+                    }
                 }
             },
             "font": "Courier"
@@ -48,6 +64,14 @@
                 "link": {
                     "text": "#ebdbf5",
                     "opacity": 0.8
+                },
+                "section": {
+                    "text":"#383838",
+                    "background":"#ACE6C6",
+                    "link": {
+                        "text": "#212121",
+                        "opacity": 0.8
+                    }
                 }
             },
             "font": "Courier"
@@ -65,6 +89,14 @@
                 "link": {
                     "text": "#212121",
                     "opacity": 0.8
+                },
+                "section": {
+                    "text":"#ebdbf5",
+                    "background":"#6a1b9a",
+                    "link": {
+                        "text": "#ebdbf5",
+                        "opacity": 0.8
+                    }
                 }
             },
             "font": "Courier"

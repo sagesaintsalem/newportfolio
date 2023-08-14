@@ -14,3 +14,14 @@
     }
 }
 
+.about {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 0.5em;
+}

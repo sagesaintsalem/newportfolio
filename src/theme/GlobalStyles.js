@@ -5,6 +5,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.colors.body};
     color: ${({ theme }) => theme.colors.text};
     font-family: ${({ theme }) => theme.font};
+    margin: 0;
     transition: all 0.50s linear;
   }
 
@@ -21,8 +22,8 @@ export const GlobalStyles = createGlobalStyle`
     border-radius: 4px;
     margin-top: 5px;
     cursor: pointer;
-    background-color: #1064EA;
-    color: #FFFFFF;
+    background-color: ${({ theme }) => theme.colors.button.background};
+    color: ${({ theme }) => theme.colors.button.text};
     font-family: ${({ theme }) => theme.font};
   }
 
@@ -30,4 +31,14 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.colors.button.background};
     color: ${({ theme }) => theme.colors.button.text};
   }
+
+  section {
+    background-color: ${({ theme }) => theme.colors.section.background};
+    color: ${({ theme }) => theme.colors.section.text};
+  }
+
+  section.a {
+    color: ${({ theme }) => theme.colors.section.link.text};
+  }
+
 `;

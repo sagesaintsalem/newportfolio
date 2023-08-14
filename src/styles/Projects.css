@@ -1,8 +1,21 @@
+
+.page {
+    padding: 4em;
+    
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 42px;
+}
+
 .wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 2em;
+    height:min-content;
 }
 
 .project {
@@ -28,3 +41,4 @@
 img {
     width: 20%;
 }
+
