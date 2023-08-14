@@ -11,8 +11,8 @@ const ImgGrid = styled.div`
     padding: 5px;
 `
 
+
 const NOTE_PROJECT = "NOTE"
-const PIRATES_PROJECT = "PIRATES"
 const FUR_PROJECT = "FUR"
 const SWANSON = "SWANSON"
 
@@ -21,7 +21,6 @@ const SWANSON = "SWANSON"
 const Projects = () => {
     const [isShowingNote, setIsShowingNote] = useState(false);
     const [isShowingFur, setIsShowingFur] = useState(false);
-    const [isShowingPirates, setIsShowingPirates] = useState(false);
     const [isShowingSwanson, setIsShowingSwanson] = useState(false);
     const [isShowingCurrent, setIsShowingCurrent] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null)
@@ -38,10 +37,7 @@ const Projects = () => {
         setIsShowingFur((isShowingFur) => !isShowingFur);
     }
 
-    function toggleShowPirates() {
-        setIsShowingPirates((isShowingPirates) => !isShowingPirates);
-        setSelectedProject(PIRATES_PROJECT)
-    }
+   
 
     function toggleShowSwanson() {
         setIsShowingSwanson((isShowingSwanson) => !isShowingSwanson);
@@ -57,7 +53,6 @@ const Projects = () => {
             <div className="wrap">
                 <Card><a onClick={toggleShowNote}>NoteClan</a></Card>
                 <Card><a onClick={toggleShowFur}>furFinder</a></Card>
-                <Card><a onClick={toggleShowPirates}>arrrrRPG!</a></Card>
                 <Card><a onClick={toggleShowSwanson}>Swansonator</a></Card>
             </div>
             
@@ -82,9 +77,7 @@ const Projects = () => {
             </ImgGrid>
             <Card>This was a group project written in React. It is a pretend animal adoption service designed to resemble Tinder. I was mainly responisble for the styling, writing up the animal database and writing the carousels which showed all available cats and dogs. My team and I got along extremely well, we were able to clearly and evenly divide up the tasks and we had fun! </Card></div>}
 
-            {selectedProject === PIRATES_PROJECT && isShowingPirates === true &&
-            <div className="project">
-            <Card>A basic role-playing game about pirates written in React with a Java backend.</Card></div>}
+            
 
             {selectedProject === SWANSON && isShowingSwanson === true &&
             <div className="project">
