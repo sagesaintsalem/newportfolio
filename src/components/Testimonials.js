@@ -30,6 +30,11 @@ const Testimonials = () => {
             <QuoteName>- S.G.</QuoteName>
         </Card>
 
+        <Card>
+            <p>Rita is a highly enthusiastic and engaged team member. She proves her passion through the creativity she adds to her work. I respect Rita's honesty and the character that she brings to work. I wish Rita the best of luck in her future endeavours.</p>
+            <QuoteName>- Tony Prasad</QuoteName>
+        </Card>
+
        </TestiDiv>
 
     )
