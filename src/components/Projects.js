@@ -11,7 +11,7 @@ const ImgGrid = styled.div`
     padding: 5px;
 `
 
-
+const HALLOWEEN = "HALLOWEEN"
 const NOTE_PROJECT = "NOTE"
 const FUR_PROJECT = "FUR"
 const SWANSON = "SWANSON"
@@ -19,6 +19,7 @@ const SWANSON = "SWANSON"
 
 
 const Projects = () => {
+    const [isShowingHalloween, setIsShowingHalloween] = useState(false);
     const [isShowingNote, setIsShowingNote] = useState(false);
     const [isShowingFur, setIsShowingFur] = useState(false);
     const [isShowingSwanson, setIsShowingSwanson] = useState(false);
@@ -26,6 +27,10 @@ const Projects = () => {
     const [selectedProject, setSelectedProject] = useState(null)
 
 
+    function toggleShowHalloween() {
+        setIsShowingHalloween((isShowingHalloween) => !isShowingHalloween);
+        setSelectedProject(HALLOWEEN)
+    }
 
     function toggleShowNote() {
         setIsShowingNote((isShowingNote) => !isShowingNote);
@@ -36,8 +41,6 @@ const Projects = () => {
         setSelectedProject(FUR_PROJECT)
         setIsShowingFur((isShowingFur) => !isShowingFur);
     }
-
-   
 
     function toggleShowSwanson() {
         setIsShowingSwanson((isShowingSwanson) => !isShowingSwanson);
@@ -51,10 +54,20 @@ const Projects = () => {
     return(
         <>
             <div className="wrap">
+                <Card><a onClick={toggleShowHalloween}>Halloween Hints</a></Card>
                 <Card><a onClick={toggleShowNote}>NoteClan</a></Card>
                 <Card><a onClick={toggleShowFur}>furFinder</a></Card>
                 <Card><a onClick={toggleShowSwanson}>Swansonator</a></Card>
             </div>
+
+            {selectedProject === HALLOWEEN && isShowingHalloween === true && 
+            <div className="project">
+                <ImgGrid>
+                <img src='./halloweenhome.png'></img>
+                <img src='./halloweenmusic.png'></img>
+                <img src='./halloweengames.png'></img>
+                </ImgGrid>
+                <Card>This was the very first website that I built, before I had even started at CodeClan. Written in HTML and CSS, held together with Bootstrap. I really enjoyed making this site as it's all about my favourite day of the year - Halloween! </Card></div>}
             
             {selectedProject === NOTE_PROJECT && isShowingNote === true &&
             <div className="project">
