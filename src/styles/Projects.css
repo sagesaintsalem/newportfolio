@@ -1,8 +1,9 @@
 
 .page {
     padding: 4em;
-    
 }
+
+
 
 h1 {
     text-align: center;
@@ -18,16 +19,29 @@ h1 {
     height:min-content;
 }
 
+.imgwrap {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;     
+}
+
+
 .project {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    padding: 2em;
+   
 }
 
-.project:target {
-    animation: fadeIn ease 3s;
+.project h2 {
+    text-align: center;
 }
+
+
 
 @keyframes fadeIn {
     0% {
@@ -38,7 +52,7 @@ h1 {
     }
 }
 
-img {
-    width: 20%;
-}
+
+
+
 

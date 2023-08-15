@@ -6,6 +6,7 @@
     background-image: linear-gradient(black, black), url('glasgow.jpg');
     background-size: cover;
     background-blend-mode: saturation;
+   
     
 }
 
@@ -13,4 +14,16 @@
     background-color: black;
     color: white;
     padding: 5px;
+
+}
+
+.toolbar img {
+    position: absolute;
+    z-index: 10;
+    right: 1em;
+    top: 1em;
+}
+
+.toolbar img:active {
+    rotate: 90deg;
 }
