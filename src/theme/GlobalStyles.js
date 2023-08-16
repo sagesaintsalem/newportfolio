@@ -34,6 +34,7 @@ export const GlobalStyles = createGlobalStyle`
   section {
     background-color: ${({ theme }) => theme.colors.section.background};
     color: ${({ theme }) => theme.colors.section.text};
+    transition: all 0.50s linear;
   }
 
   
