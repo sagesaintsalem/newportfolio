@@ -11,8 +11,8 @@
                     "background": "#FFFFFF"
                 },
                 "section": {
-                    "text":"#FFFFFF",
-                    "background":"#2c3e50"
+                    "text":"#000000",
+                    "background":"#f8f6fe"
                 }
             },
             "font": "Open Sans"
@@ -29,8 +29,8 @@
                     "background": "#2c3e50"
                 },
                 "section": {
-                    "text":"#000000",
-                    "background":"#FFFFFF"
+                    "text":"#FFFFFF",
+                    "background":"#26323d"
                 }
             },
             "font": "Open Sans"
@@ -39,15 +39,15 @@
             "id": "T_003",
             "name": "Purple",
             "colors": {
-                "body": "#6a1b9a",
+                "body": "#6a0dad",
                 "text": "#ebdbf5",
                 "button": {
-                    "text": "#6a1b9a",
-                    "background": "#ebdbf5"
+                    "text": "#ebdbf5",
+                    "background": "#6a0dad"
                 },
                 "section": {
-                    "text":"#383838",
-                    "background":"#ACE6C6"
+                    "text":"#ebdbf5",
+                    "background":"#5b009e"
                 }
             },
             "font": "Open Sans"
@@ -56,15 +56,15 @@
             "id": "T_005",
             "name": "Green",
             "colors": {
-                "body": "#ACE6C6",
+                "body": "#62997d",
                 "text": "#383838",
                 "button": {
                     "text": "#383838",
-                    "background": "#D8FAF6"
+                    "background": "#62997d"
                 },
                 "section": {
-                    "text":"#ebdbf5",
-                    "background":"#6a1b9a"
+                    "text":"#383838",
+                    "background":"#83bb9d"
                 }
             },
             "font": "Open Sans"

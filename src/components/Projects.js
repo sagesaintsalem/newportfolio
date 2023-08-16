@@ -54,9 +54,9 @@ const Projects = () => {
                 {selectedProject === HALLOWEEN && isShowingHalloween === true && 
                 <div className="project">
                     <div className="imgwrap">
-                    <img src='./minis/minihalloweenhome.png'></img>
-                    <img src='./minis/halloweenmusic.png'></img>
-                    <img src='./minis/minihalloweengames.png'></img>
+                    <img src='./minis/minihalloweenhome.png' alt='Ritas black and orange halloween homepage. There is a picture of the 3 witches from MacScottishplay'></img>
+                    <img src='./minis/halloweenmusic.png' alt='Ritas black and orange halloween music page. There is a Spotify widget of Ritas very own halloween playlist.'></img>
+                    <img src='./minis/minihalloweengames.png' alt='Ritas black and orange halloween video games page.'></img>
                     </div>
                     <Card>This was the very first website that I built, before I had even started at CodeClan. Written in HTML and CSS, held together with Bootstrap. I really enjoyed making this site as it's all about my favourite day of the year - Halloween! </Card></div>}
                 

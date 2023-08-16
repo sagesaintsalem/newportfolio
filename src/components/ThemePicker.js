@@ -5,7 +5,6 @@ import {useTheme} from '../theme/useTheme';
 import { getFromLS } from '../storage';
 
 
-
 const ThemePicker = (props) => {
     const themesFromStore = getFromLS('all-themes');
     const [data, setData] = useState(themesFromStore.data);
@@ -58,7 +57,13 @@ const ThemePicker = (props) => {
                         <ThemeCard theme={data[theme]} key={data[theme].id} />
                     ))
             }
+            
                 </ul>
+               <div>
+                <a href='https://github.com/sagesaintsalem' target='_blank'><img src='./github.png' alt='Githubs famous squid-cat logo'></img></a>
+                <a href='https://www.linkedin.com/in/rita-toussaint' target='_blank'><img src='./linkedblack.png' alt='Linked In logo in black, shows the word in'></img></a>
+               </div>
+                
             </div>
 
         </>

@@ -15,7 +15,8 @@ const Toolbar = (props) => {
     return (
         <div className="toolbar">
             <h1>Rita Toussaint</h1>
-            <a><img src='./borger.png' onClick={toggleMenu}></img>
+
+            <a><img className="borger" src='./borger.png' alt='3 transparent rectangles signifying a menu' onClick={toggleMenu}></img>
                 {showMenu === true && <ThemePicker setter={toolbarSetter} newTheme={toolbarNewTheme} /> }
             </a>
 

@@ -17,15 +17,21 @@
     
     }
     
-    .toolbar img {
+    .borger {
         position: absolute;
         z-index: 10;
         right: 1em;
         top: 1em;
     }
     
-    .toolbar img:active {
+    .borger:active {
         rotate: 90deg;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 
@@ -47,7 +53,7 @@
         font-size: 30px;
     }
     
-    .toolbar img {
+    .borger {
         position: absolute;
         z-index: 10;
         right: 0.25em;
@@ -55,7 +61,7 @@
         transform: scale(0.5);
     }
     
-    .toolbar img:active {
+    .borger:active {
         rotate: 90deg;
     }
 
