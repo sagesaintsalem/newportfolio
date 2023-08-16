@@ -10,20 +10,12 @@
                     "text": "#000000",
                     "background": "#FFFFFF"
                 },
-                "link": {
-                    "text": "teal",
-                    "opacity": 1
-                },
                 "section": {
                     "text":"#FFFFFF",
-                    "background":"#2c3e50",
-                    "link": {
-                        "text": "yellow",
-                        "opacity": 1
-                    }
+                    "background":"#2c3e50"
                 }
             },
-            "font": "Courier"
+            "font": "Open Sans"
         },
         "dark" : {
             "id": "T_002",
@@ -36,20 +28,12 @@
                     "text": "#FFFFFF",
                     "background": "#2c3e50"
                 },
-                "link": {
-                    "text": "yellow",
-                    "opacity": 1
-                },
                 "section": {
                     "text":"#000000",
-                    "background":"#FFFFFF",
-                    "link": {
-                        "text": "teal",
-                        "opacity": 1
-                    }
+                    "background":"#FFFFFF"
                 }
             },
-            "font": "Courier"
+            "font": "Open Sans"
         },
         "purple" : {
             "id": "T_003",
@@ -61,20 +45,12 @@
                     "text": "#6a1b9a",
                     "background": "#ebdbf5"
                 },
-                "link": {
-                    "text": "#ebdbf5",
-                    "opacity": 0.8
-                },
                 "section": {
                     "text":"#383838",
-                    "background":"#ACE6C6",
-                    "link": {
-                        "text": "#212121",
-                        "opacity": 0.8
-                    }
+                    "background":"#ACE6C6"
                 }
             },
-            "font": "Courier"
+            "font": "Open Sans"
         },
         "green" : {
             "id": "T_005",
@@ -86,20 +62,12 @@
                     "text": "#383838",
                     "background": "#D8FAF6"
                 },
-                "link": {
-                    "text": "#212121",
-                    "opacity": 0.8
-                },
                 "section": {
                     "text":"#ebdbf5",
-                    "background":"#6a1b9a",
-                    "link": {
-                        "text": "#ebdbf5",
-                        "opacity": 0.8
-                    }
+                    "background":"#6a1b9a"
                 }
             },
-            "font": "Courier"
+            "font": "Open Sans"
         }
     }
 }

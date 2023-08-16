@@ -10,7 +10,6 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a {
-    color: ${({ theme }) => theme.colors.link.text};
     cursor: pointer;
   }
 
@@ -37,8 +36,6 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.section.text};
   }
 
-  section.a {
-    color: ${({ theme }) => theme.colors.section.link.text};
-  }
+  
 
 `;

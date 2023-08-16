@@ -43,7 +43,7 @@ const Projects = () => {
     return(
         <>
             <section className="page">
-                <Card><h1>Projects</h1></Card>
+                <h1>Projects</h1>
                 <div className="wrap">
                     <Card><a onClick={toggleShowHalloween}>Halloween Hints</a></Card>
                     <Card><a onClick={toggleShowNote}>NoteClan</a></Card>
@@ -94,9 +94,11 @@ const Projects = () => {
 
                 <div className="project">
                     <h2>Current Projects</h2>
-                    <Card>I am very interested in learning how to build apps from scratch following my experiences in getting Intrepid English's app uploaded to the Apple App Store. I am currently following the <a href='https://developer.android.com/courses/android-basics-compose/course' target='_blank'>Android Developer course</a> on building an app in Kotlin with JetPack Compose and plan to move on to Flutter afterwards.</Card>
+                    I am very interested in learning how to build apps from scratch following my experiences in getting Intrepid English's app uploaded to the Apple App Store. I am currently following the <a href='https://developer.android.com/courses/android-basics-compose/course' target='_blank'>Android Developer course</a> on building an app in Kotlin with JetPack Compose and plan to move on to Flutter afterwards.
+                    <br></br>
                 </div>
-                
+                <br></br>
+                <br></br>
                 
             </section>
         </>

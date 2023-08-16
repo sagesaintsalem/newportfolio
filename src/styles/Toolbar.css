@@ -1,29 +1,62 @@
-.toolbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1em;
-    background-image: linear-gradient(black, black), url('glasgow.jpg');
-    background-size: cover;
-    background-blend-mode: saturation;
-   
+@media (min-width: 821px) {
+    .toolbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1em;
+        background-image: linear-gradient(black, black), url('glasgow.jpg');
+        background-size: cover;
+        background-blend-mode: saturation; 
+    }
     
+    .toolbar h1 {
+        background-color: black;
+        color: white;
+        padding: 5px;
+        font-size: 45px;
+    
+    }
+    
+    .toolbar img {
+        position: absolute;
+        z-index: 10;
+        right: 1em;
+        top: 1em;
+    }
+    
+    .toolbar img:active {
+        rotate: 90deg;
+    }
 }
 
-.toolbar h1 {
-    background-color: black;
-    color: white;
-    padding: 5px;
+@media (min-width:360px) and (max-width: 820px) {
+    .toolbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0.25em;
+        background-image: linear-gradient(black, black), url('glasgow.jpg');
+        background-size: cover;
+        background-blend-mode: saturation; 
+    }
+    
+    .toolbar h1 {
+        background-color: black;
+        color: white;
+        padding: 5px;
+        font-size: 30px;
+    }
+    
+    .toolbar img {
+        position: absolute;
+        z-index: 10;
+        right: 0.25em;
+        top: 0.25em;
+        transform: scale(0.5);
+    }
+    
+    .toolbar img:active {
+        rotate: 90deg;
+    }
 
-}
-
-.toolbar img {
-    position: absolute;
-    z-index: 10;
-    right: 1em;
-    top: 1em;
-}
-
-.toolbar img:active {
-    rotate: 90deg;
 }

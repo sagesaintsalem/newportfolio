@@ -1,58 +1,130 @@
-
-.page {
-    padding: 4em;
-}
-
-
-
-h1 {
+.page h1 {
+    font-size: 25px;
     text-align: center;
-    font-weight: 900;
-    font-size: 42px;
+    text-decoration: underline;
 }
-
-.wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 2em;
-    height:min-content;
-}
-
-.imgwrap {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 10px;     
-}
-
-
 .project {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
+    padding: 1em;
+    margin-top: 1em;
    
 }
-
 .project h2 {
     text-align: center;
+    text-decoration: underline;
+}
+
+.project a {
+    background-color: white;
+    text-decoration: none;
+    overflow: none;
+}
+
+@media (min-width: 1520px) {
+    .page {
+        padding: 4em;
+    }
+    
+    
+    .wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 2em;
+        height:min-content;
+        margin-top: 2em;
+    }
+
+    
+    .imgwrap {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 10px;     
+    }
+    
+    
+    
+   
+
+  
 }
 
 
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
+@media (min-width:360px) and (max-width: 800px) {
+    .page {
+        padding: 1em;
     }
-    100% {
-        opacity: 1;
+    
+    
+    .wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;    
+        margin-top: 1em;
+        text-align: center;
     }
+
+    .imgwrap {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        overflow: auto;
+        grid-column-gap: 5px;
+        grid-row-gap: 10px;     
+        padding-bottom: 1em;
+    }
+
+   .imgwrap img {
+        width: 50%;
+   }
+    
+    
+    
+
 }
 
+@media (min-width: 801px) and (max-width: 1519px) {
+    .page {
+        padding: 1em;
+    }
+    
+    
+    .wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 5px;    
+        text-align: center;
+        padding: 2em;
+    }
+    
+    .imgwrap {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        overflow: auto;
+        grid-column-gap: 5px;
+        grid-row-gap: 10px;     
+    }
 
+   .imgwrap img {
+    width: 60%;
+   }
+    
+   
+    
 
-
+    
+}
 
