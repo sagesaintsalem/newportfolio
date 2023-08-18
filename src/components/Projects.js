@@ -80,6 +80,11 @@ const Projects = () => {
                     <img src='./minis/minihalloweengames.png' alt='Ritas black and orange halloween video games page.' loading='lazy' className="gallery_image"></img></div>
 
                     </div>
+
+                    <div className="smolscreen">
+                        <p><em>Scroll left to right to see more screenshots</em></p>
+                    </div>
+
                     <Card>This was the very first website that I built, before I had even started at CodeClan. Written in HTML and CSS, held together with Bootstrap. I really enjoyed making this site as it's all about my favourite day of the year - Halloween! </Card></div>}
                 
                 {selectedProject === NOTE_PROJECT && isShowingNote === true &&
@@ -97,7 +102,13 @@ const Projects = () => {
 
                         <div className="gallery_item">
                         <img id='image-4' src='./projectshots/noteclanbookings.png' alt='Phone home' loading="lazy" className="gallery_image"/></div>
+
                     </div>
+
+                    <div className="smolscreen">
+                        <p><em>Scroll left to right to see more screenshots</em></p>
+                    </div>
+
                 <Card>This was my first project at CodeClan, written in Python, Flask and MongoDB, inspired by my own struggles in booking rehearsal space for singing practice. This is a basic CRUD app with 90s-inspired styling.</Card></div>}
                 
                 {selectedProject === FUR_PROJECT && isShowingFur === true &&
@@ -129,8 +140,12 @@ const Projects = () => {
                     <img id='image-5' src='./projectshots/popup.png' alt='Popup' loading="lazy" className="gallery_image"/>
                     </div>
 
-
                 </div>
+
+                <div className="smolscreen">
+                        <p><em>Scroll left to right to see more screenshots</em></p>
+                </div>
+
                 <Card>This was a group project written in React. It is a pretend animal adoption service designed to resemble Tinder. I was mainly responisble for the styling, writing up the animal database and writing the carousels which showed all available cats and dogs. My team and I got along extremely well, we were able to clearly and evenly divide up the tasks and we had fun! </Card></div>}
 
                 
@@ -148,8 +163,13 @@ const Projects = () => {
                 <img src='./projectshots/swansearch.png' alt='Orange page with Ron Swanson in centre. A random quote from the character is featured below along with a keyword search.' loading='lazy' className="gallery_image"></img>
 
                 </div>
-                
+
                 </div>
+
+                <div className="smolscreen">
+                        <p><em>Scroll left to right to see more screenshots</em></p>
+                </div>
+
                     <Card>I made this Ron Swanson quote generator one day over Christmas break to practice using RESTful APIs. The 'New Quote' button returns a new quote from the API and the search bar searches for quotes based on user input. I kept the styling simple to reflect the character. I had a lot of fun with this silly little project!</Card></div>}
 
 
