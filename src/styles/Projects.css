@@ -32,10 +32,7 @@ button a {
 }
 
 @media (min-width: 1520px) {
-    .page {
-        overflow: hidden;
-        height: 100vh;
-    }
+    
     
     
     .wrap {
@@ -48,8 +45,8 @@ button a {
     }
 
     .project {
-        padding: 1em;
-        margin-top: 1em;
+        padding: 0 1em;
+       
        
     }
 

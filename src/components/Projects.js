@@ -11,35 +11,50 @@ const SWANSON = "SWANSON"
 
 
 const Projects = () => {
-    const [isShowingHalloween, setIsShowingHalloween] = useState(false);
-    const [isShowingNote, setIsShowingNote] = useState(false);
-    const [isShowingFur, setIsShowingFur] = useState(false);
-    const [isShowingSwanson, setIsShowingSwanson] = useState(false);
+    // const [isShowingHalloween, setIsShowingHalloween] = useState(false);
+    // const [isShowingNote, setIsShowingNote] = useState(false);
+    // const [isShowingFur, setIsShowingFur] = useState(false);
+    // const [isShowingSwanson, setIsShowingSwanson] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null)
-    const [selectedImage, setSelectedImage] = useState('')
+    const [isHiding, setIsHiding] = useState(false)
+
+    const [isShowingProject, setIsShowingProject] = useState(false);
+
+    function toggleShowProject() {
+        setIsShowingProject((isShowingProject) => !isShowingProject);
+    }
 
 
     function toggleShowHalloween() {
-        setIsShowingHalloween((isShowingHalloween) => !isShowingHalloween);
+        // setIsShowingHalloween((isShowingHalloween) => !isShowingHalloween);
+        toggleShowProject();
         setSelectedProject(HALLOWEEN)
+        setIsHiding((isHiding) => !isHiding);
+        console.log(selectedProject);
     }
 
     function toggleShowNote() {
-        setIsShowingNote((isShowingNote) => !isShowingNote);
+        // setIsShowingNote((isShowingNote) => !isShowingNote);
+        toggleShowProject();
         setSelectedProject(NOTE_PROJECT)
+        setIsHiding((isHiding) => !isHiding);
     }
 
     function toggleShowFur() {
         setSelectedProject(FUR_PROJECT)
-        setIsShowingFur((isShowingFur) => !isShowingFur);
+        toggleShowProject();
+        // setIsShowingFur((isShowingFur) => !isShowingFur);
+        setIsHiding((isHiding) => !isHiding);
     }
 
     function toggleShowSwanson() {
-        setIsShowingSwanson((isShowingSwanson) => !isShowingSwanson);
+        toggleShowProject();
+        // setIsShowingSwanson((isShowingSwanson) => !isShowingSwanson);
         setSelectedProject(SWANSON)
+        setIsHiding((isHiding) => !isHiding);
     }
 
-    
+   
 
    
 
@@ -54,7 +69,7 @@ const Projects = () => {
                     <button><a onClick={toggleShowSwanson}>Swansonator</a></button>
                 </div>
 
-                {selectedProject === HALLOWEEN && isShowingHalloween === true && 
+                {selectedProject === HALLOWEEN && isShowingProject === true && 
                 <div className="project">
                     <div className="gallery">
                         <div className="gallery_item">
@@ -75,7 +90,7 @@ const Projects = () => {
 
                     <p>This was the very first website that I built, before I had even started at CodeClan. Written in HTML and CSS, held together with Bootstrap. I really enjoyed making this site as it's all about my favourite day of the year - Halloween! </p></div>}
                 
-                {selectedProject === NOTE_PROJECT && isShowingNote === true &&
+                {selectedProject === NOTE_PROJECT && isShowingProject === true &&
                 <div className="project">
                 <div className="gallery">
 
@@ -99,14 +114,9 @@ const Projects = () => {
 
                 <p>This was my first project at CodeClan, written in Python, Flask and MongoDB, inspired by my own struggles in booking rehearsal space for singing practice. This is a basic CRUD app with 90s-inspired styling.</p></div>}
                 
-                {selectedProject === FUR_PROJECT && isShowingFur === true &&
+                {selectedProject === FUR_PROJECT && isShowingProject === true &&
                 <div className="project">
                 <div className="gallery">
-                {/* <img src='./minis/home.png'></img>
-                <img src='./minis/bettercatcarousel.png'></img>
-                <img src='./minis/dogcarousel.png'></img>
-                <img src='./minis/admin.png'></img>
-                <img src='./minis/popup.png'></img> */}
 
                     <div className="gallery_item">
                             <img id='image-1' src='./projectshots/home.png' alt='furFinder home' loading="lazy" className="gallery_image" />
@@ -138,7 +148,7 @@ const Projects = () => {
 
                 
 
-                {selectedProject === SWANSON && isShowingSwanson === true &&
+                {selectedProject === SWANSON && isShowingProject === true &&
                 <div className="project">
                 <div className="gallery">
 
@@ -160,12 +170,14 @@ const Projects = () => {
 
                     <p>I made this Ron Swanson quote generator one day over Christmas break to practice using RESTful APIs. The 'New Quote' button returns a new quote from the API and the search bar searches for quotes based on user input. I kept the styling simple to reflect the character. I had a lot of fun with this silly little project!</p></div>}
 
-
+                {isShowingProject == false &&
                 <div className="project">
-                    <h2 id='current-title'>Current Projects</h2>
-                    <p>I am very interested in learning how to build apps from scratch following my experiences in getting Intrepid English's app uploaded to the Apple App Store. I am currently following the <a href='https://developer.android.com/courses/android-basics-compose/course' target='_blank' rel='noreferrer'>Android Developer course</a> on building an app in Kotlin with JetPack Compose and plan to move on to Flutter afterwards.</p>
-                    <br></br>
+                <h2 id='current-title'>Current Projects</h2>
+                <p>I am very interested in learning how to build apps from scratch following my experiences in getting Intrepid English's app uploaded to the Apple App Store. I am currently following the <a href='https://developer.android.com/courses/android-basics-compose/course' target='_blank' rel='noreferrer'>Android Developer course</a> on building an app in Kotlin with JetPack Compose and plan to move on to Flutter afterwards.</p>
+                <br></br>
                 </div>
+                }
+                
                 <br></br>
                 <br></br>
                 
