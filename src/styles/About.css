@@ -1,27 +1,39 @@
-.about-cards {
-    row-gap: 4em;
-    margin: 2em;
+.intro {
+    padding: 2em;
     font-size: 18px;
-    animation: fadeIn ease 3s;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 .about {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    height: 90vh;
 }
 
 .title {
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    gap: 0.5em;
+    margin: 1em 0.7em;
+    font-size: 40px;
+}
+
+
+@media (min-width: 801px) and (max-width: 1519px) {
+    .title {
+        font-size: 30px;
+        margin: 0.7em 0.45em;
+        text-align: center;
+    }
+}
+
+@media (min-width:360px) and (max-width: 800px) {
+    .title {
+        font-size: 20px;
+        margin: 0.30em 0.25em;
+        text-align: center;
+    }
+
+    .intro {
+        padding: 0.3em 1.2em;
+        font-size: 15px;
+    }
+
+
 }

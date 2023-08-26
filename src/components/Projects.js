@@ -1,17 +1,12 @@
-import Card from "./Card";
 import '../styles/Projects.css';
 import { useState } from "react";
+
 
 
 const HALLOWEEN = "HALLOWEEN"
 const NOTE_PROJECT = "NOTE"
 const FUR_PROJECT = "FUR"
 const SWANSON = "SWANSON"
-
-const NOTE1 = "NOTE1"
-const NOTE2 = "NOTE2"
-const NOTE3 = "NOTE3"
-
 
 
 
@@ -21,7 +16,6 @@ const Projects = () => {
     const [isShowingFur, setIsShowingFur] = useState(false);
     const [isShowingSwanson, setIsShowingSwanson] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null)
-    // const [showImage, setShowImage] = useState(false);
     const [selectedImage, setSelectedImage] = useState('')
 
 
@@ -45,13 +39,7 @@ const Projects = () => {
         setSelectedProject(SWANSON)
     }
 
-    function toggleShowImage(event) {
-        console.log(event.currentTarget.id)
-        let imageName = String(event.currentTarget.id);
-        setSelectedImage(imageName);
-      
-        
-    }
+    
 
    
 
@@ -60,10 +48,10 @@ const Projects = () => {
             <section className="page">
                 <h1>Projects</h1>
                 <div className="wrap">
-                    <Card><a onClick={toggleShowHalloween}>Halloween Hints</a></Card>
-                    <Card><a onClick={toggleShowNote}>NoteClan</a></Card>
-                    <Card><a onClick={toggleShowFur}>furFinder</a></Card>
-                    <Card><a onClick={toggleShowSwanson}>Swansonator</a></Card>
+                    <button><a onClick={toggleShowHalloween}>Halloween Hints</a></button>
+                    <button><a onClick={toggleShowNote}>NoteClan</a></button>
+                    <button><a onClick={toggleShowFur}>furFinder</a></button>
+                    <button><a onClick={toggleShowSwanson}>Swansonator</a></button>
                 </div>
 
                 {selectedProject === HALLOWEEN && isShowingHalloween === true && 
@@ -85,7 +73,7 @@ const Projects = () => {
                         <p><em>Scroll left to right to see more screenshots</em></p>
                     </div>
 
-                    <Card>This was the very first website that I built, before I had even started at CodeClan. Written in HTML and CSS, held together with Bootstrap. I really enjoyed making this site as it's all about my favourite day of the year - Halloween! </Card></div>}
+                    <p>This was the very first website that I built, before I had even started at CodeClan. Written in HTML and CSS, held together with Bootstrap. I really enjoyed making this site as it's all about my favourite day of the year - Halloween! </p></div>}
                 
                 {selectedProject === NOTE_PROJECT && isShowingNote === true &&
                 <div className="project">
@@ -109,7 +97,7 @@ const Projects = () => {
                         <p><em>Scroll left to right to see more screenshots</em></p>
                     </div>
 
-                <Card>This was my first project at CodeClan, written in Python, Flask and MongoDB, inspired by my own struggles in booking rehearsal space for singing practice. This is a basic CRUD app with 90s-inspired styling.</Card></div>}
+                <p>This was my first project at CodeClan, written in Python, Flask and MongoDB, inspired by my own struggles in booking rehearsal space for singing practice. This is a basic CRUD app with 90s-inspired styling.</p></div>}
                 
                 {selectedProject === FUR_PROJECT && isShowingFur === true &&
                 <div className="project">
@@ -146,7 +134,7 @@ const Projects = () => {
                         <p><em>Scroll left to right to see more screenshots</em></p>
                 </div>
 
-                <Card>This was a group project written in React. It is a pretend animal adoption service designed to resemble Tinder. I was mainly responisble for the styling, writing up the animal database and writing the carousels which showed all available cats and dogs. My team and I got along extremely well, we were able to clearly and evenly divide up the tasks and we had fun! </Card></div>}
+                <p>This was a group project written in React. It is a pretend animal adoption service designed to resemble Tinder. I was mainly responisble for the styling, writing up the animal database and writing the carousels which showed all available cats and dogs. My team and I got along extremely well, we were able to clearly and evenly divide up the tasks and we had fun! </p></div>}
 
                 
 
@@ -170,12 +158,12 @@ const Projects = () => {
                         <p><em>Scroll left to right to see more screenshots</em></p>
                 </div>
 
-                    <Card>I made this Ron Swanson quote generator one day over Christmas break to practice using RESTful APIs. The 'New Quote' button returns a new quote from the API and the search bar searches for quotes based on user input. I kept the styling simple to reflect the character. I had a lot of fun with this silly little project!</Card></div>}
+                    <p>I made this Ron Swanson quote generator one day over Christmas break to practice using RESTful APIs. The 'New Quote' button returns a new quote from the API and the search bar searches for quotes based on user input. I kept the styling simple to reflect the character. I had a lot of fun with this silly little project!</p></div>}
 
 
                 <div className="project">
-                    <h2>Current Projects</h2>
-                    I am very interested in learning how to build apps from scratch following my experiences in getting Intrepid English's app uploaded to the Apple App Store. I am currently following the <a href='https://developer.android.com/courses/android-basics-compose/course' target='_blank'>Android Developer course</a> on building an app in Kotlin with JetPack Compose and plan to move on to Flutter afterwards.
+                    <h2 id='current-title'>Current Projects</h2>
+                    <p>I am very interested in learning how to build apps from scratch following my experiences in getting Intrepid English's app uploaded to the Apple App Store. I am currently following the <a href='https://developer.android.com/courses/android-basics-compose/course' target='_blank' rel='noreferrer'>Android Developer course</a> on building an app in Kotlin with JetPack Compose and plan to move on to Flutter afterwards.</p>
                     <br></br>
                 </div>
                 <br></br>

@@ -46,9 +46,18 @@ function App() {
             style={{ scaleX: scrollYProgress }}
           />
           <Toolbar className="toolbar" setter={ setSelectedTheme } newTheme={ newTheme }/>
+          
+          <div className='topic'>
           <About />
+          </div>
+          
+          <div className='topic'>
           <Projects />
+          </div>
+          
+          <div className='topic'>
           <Testimonials />
+          </div>
         </Container>
       </ThemeProvider>
     }

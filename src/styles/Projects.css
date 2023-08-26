@@ -2,13 +2,10 @@
     font-size: 25px;
     text-align: center;
     text-decoration: underline;
-}
-.project {
-    padding: 1em;
-    margin-top: 1em;
    
 }
-.project h2 {
+
+#current-title {
     text-align: center;
     text-decoration: underline;
 }
@@ -23,9 +20,21 @@
     font-size: 12px;
 }
 
+button {
+    border-radius: 0.75rem;
+    height: 4rem;
+    width: 10rem;
+}
+
+button a {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 @media (min-width: 1520px) {
     .page {
-        padding: 4em;
+        overflow: hidden;
+        height: 100vh;
     }
     
     
@@ -36,6 +45,12 @@
         padding: 2em;
         height:min-content;
         margin-top: 2em;
+    }
+
+    .project {
+        padding: 1em;
+        margin-top: 1em;
+       
     }
 
     .gallery {
@@ -69,10 +84,10 @@
 
 @media (min-width:360px) and (max-width: 800px) {
     .page {
-        padding: 1em;
+        overflow: hidden;
+        height: 100vh;
     }
-    
-    
+
     .wrap {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -81,6 +96,13 @@
         grid-row-gap: 5px;    
         margin-top: 1em;
         text-align: center;
+        justify-items: center;
+    }
+
+    .project {
+        padding: 0 1em;
+        
+       
     }
 
     .gallery {
@@ -89,7 +111,7 @@
         column-gap: 10px;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
-        margin-bottom: 0.5em;
+       
     }
 
     .gallery_item {
@@ -115,6 +137,7 @@
 @media (min-width: 801px) and (max-width: 1519px) {
     .page {
         padding: 1em;
+        overflow: hidden;
     }
     
     
@@ -122,12 +145,16 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 50px;
+        grid-column-gap: 20px;
         grid-row-gap: 5px;    
         text-align: center;
-        padding: 2em;
+        padding: 1em;
+        justify-items: center;
     }
     
+    .project {
+        padding: 1em;
+    }
    
     .gallery {
         display: flex;

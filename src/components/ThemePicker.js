@@ -5,6 +5,7 @@ import {useTheme} from '../theme/useTheme';
 import { getFromLS } from '../storage';
 
 
+
 const ThemePicker = (props) => {
     const themesFromStore = getFromLS('all-themes');
     const [data, setData] = useState(themesFromStore.data);
@@ -12,7 +13,6 @@ const ThemePicker = (props) => {
     const {setMode} = useTheme();
 
     const themeSwitcher = selectedTheme => {
-        console.log(selectedTheme);
         setMode(selectedTheme);
         props.setter(selectedTheme);
     };
@@ -47,7 +47,7 @@ const ThemePicker = (props) => {
 
     return (
         <>
-            <div className='picker'>
+            <div className='picker' >
             <h3>Themes</h3>
                 <ul className='container'>
                     

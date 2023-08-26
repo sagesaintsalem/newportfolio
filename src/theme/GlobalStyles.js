@@ -24,6 +24,7 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.colors.button.background};
     color: ${({ theme }) => theme.colors.button.text};
     font-family: ${({ theme }) => theme.font};
+    box-shadow: ${({ theme }) => theme.colors.button.boxshadow};
   }
 
   button.btn {

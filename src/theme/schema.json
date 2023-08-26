@@ -8,14 +8,15 @@
                 "text": "#000000",
                 "button": {
                     "text": "#000000",
-                    "background": "#FFFFFF"
+                    "background": "#FFFFFF",
+                    "boxshadow": "inset 0px -9px 3px 0px rgba(0,0,0,0.3),0px 16px 15px 7px rgba(0,0,0,0.1);"
                 },
                 "section": {
                     "text":"#000000",
                     "background":"#f8f6fe"
                 }
             },
-            "font": "Open Sans"
+            "font": "Heebo"
         },
         "dark" : {
             "id": "T_002",
@@ -26,14 +27,15 @@
                 "box-shadow": "#EFEFEF",
                 "button": {
                     "text": "#FFFFFF",
-                    "background": "#2c3e50"
+                    "background": "#2c3e50",
+                    "boxshadow": "inset 0px -9px 3px 0px rgba(0,0,0,0.2),0px 16px 15px 7px rgba(0,0,0,0.5);;"
                 },
                 "section": {
                     "text":"#FFFFFF",
                     "background":"#26323d"
                 }
             },
-            "font": "Open Sans"
+            "font": "Heebo"
         },
         "purple" : {
             "id": "T_003",
@@ -43,31 +45,33 @@
                 "text": "#ebdbf5",
                 "button": {
                     "text": "#ebdbf5",
-                    "background": "#6a0dad"
+                    "background": "#6a0dad",
+                    "boxshadow": "inset 0px -9px 3px 0px rgba(0,0,0,0.2),0px 16px 15px 7px rgba(0,0,0,0.5);"
                 },
                 "section": {
                     "text":"#ebdbf5",
                     "background":"#5b009e"
                 }
             },
-            "font": "Open Sans"
+            "font": "Heebo"
         },
         "green" : {
             "id": "T_005",
             "name": "Green",
             "colors": {
                 "body": "#62997d",
-                "text": "#383838",
+                "text": "#000000",
                 "button": {
-                    "text": "#383838",
-                    "background": "#62997d"
+                    "text": "#000000",
+                    "background": "#62997d",
+                    "boxshadow": "inset 0px -9px 3px 0px rgba(0,0,0,0.3),0px 16px 15px 7px rgba(0,0,0,0.1);"
                 },
                 "section": {
                     "text":"#383838",
                     "background":"#83bb9d"
                 }
             },
-            "font": "Open Sans"
+            "font": "Heebo"
         }
     }
 }

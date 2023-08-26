@@ -1,4 +1,4 @@
-@media (min-width: 821px) {
+@media (min-width: 801px) {
     .toolbar {
         display: flex;
         flex-direction: row;
@@ -24,9 +24,7 @@
         top: 1em;
     }
     
-    .borger:active {
-        rotate: 90deg;
-    }
+   
 
     .contact {
         display: flex;
@@ -35,7 +33,7 @@
     }
 }
 
-@media (min-width:360px) and (max-width: 820px) {
+@media (min-width:360px) and (max-width: 800px) {
     .toolbar {
         display: flex;
         flex-direction: row;
@@ -58,11 +56,11 @@
         z-index: 10;
         right: 0.25em;
         top: 0.25em;
-        transform: scale(0.5);
+        -moz-transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+        transition: all .2s linear;
     }
     
-    .borger:active {
-        rotate: 90deg;
-    }
+    
 
 }
