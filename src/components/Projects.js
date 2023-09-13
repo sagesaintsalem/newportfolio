@@ -11,10 +11,7 @@ const SWANSON = "SWANSON"
 
 
 const Projects = () => {
-    // const [isShowingHalloween, setIsShowingHalloween] = useState(false);
-    // const [isShowingNote, setIsShowingNote] = useState(false);
-    // const [isShowingFur, setIsShowingFur] = useState(false);
-    // const [isShowingSwanson, setIsShowingSwanson] = useState(false);
+  
     const [selectedProject, setSelectedProject] = useState(null)
     const [isHiding, setIsHiding] = useState(false)
 
