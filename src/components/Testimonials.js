@@ -7,7 +7,7 @@ import '../styles/Testimonials.css';
 const Testimonials = () => {
 
     return (
-    <>
+    <div className='viewfinder'>
      <h2>Testimonials</h2>
        <div className='testiDiv'>
 
@@ -35,7 +35,7 @@ const Testimonials = () => {
 
        </div>
        <br></br>
-        </>
+        </div>
     )
 }
 

@@ -9,7 +9,7 @@
                 "button": {
                     "text": "#000000",
                     "background": "#FFFFFF",
-                    "boxshadow": "inset 0px -9px 3px 0px rgba(0,0,0,0.3),0px 16px 15px 7px rgba(0,0,0,0.1);"
+                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.3);"
                 },
                 "section": {
                     "text":"#000000",
@@ -28,7 +28,7 @@
                 "button": {
                     "text": "#FFFFFF",
                     "background": "#2c3e50",
-                    "boxshadow": "inset 0px -9px 3px 0px rgba(0,0,0,0.2),0px 16px 15px 7px rgba(0,0,0,0.5);;"
+                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.72);"
                 },
                 "section": {
                     "text":"#FFFFFF",
@@ -46,7 +46,7 @@
                 "button": {
                     "text": "#ebdbf5",
                     "background": "#6a0dad",
-                    "boxshadow": "inset 0px -9px 3px 0px rgba(0,0,0,0.2),0px 16px 15px 7px rgba(0,0,0,0.5);"
+                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.72);"
                 },
                 "section": {
                     "text":"#ebdbf5",
@@ -64,7 +64,7 @@
                 "button": {
                     "text": "#000000",
                     "background": "#62997d",
-                    "boxshadow": "inset 0px -9px 3px 0px rgba(0,0,0,0.3),0px 16px 15px 7px rgba(0,0,0,0.1);"
+                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.3);"
                 },
                 "section": {
                     "text":"#383838",

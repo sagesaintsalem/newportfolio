@@ -13,6 +13,10 @@ export const GlobalStyles = createGlobalStyle`
     cursor: pointer;
   }
 
+  a:visited {
+    color: ${({ theme }) => theme.colors.text};
+  }
+
   button {
     border: 0;
     display: inline-block;

@@ -3,6 +3,7 @@ import '../styles/Toolbar.css';
 import { useState } from "react";
 import ClickAwayListener from 'react-click-away-listener';
 import { motion, animate } from "framer-motion";
+import { TiThMenuOutline } from 'react-icons/ti'
 
 const Toolbar = (props) => {
     const toolbarSetter = props.setter
@@ -25,13 +26,12 @@ const Toolbar = (props) => {
             <h1>Rita Toussaint</h1>
 
             <ClickAwayListener onClickAway={handleClickAway}>
-                <span><motion.img className="borger" 
-                src='./borger.png' 
+                <span><motion.svg className="borger" 
                 alt='3 transparent rectangles signifying a menu' 
                 onClick={toggleMenu}
-                animate={{rotate: showMenu ? 90:0}}
-                >
-                </motion.img>
+                animate={{color: showMenu ? '#FFEA00':"#000000"}}>
+                    <TiThMenuOutline />
+                </motion.svg>
                 
                     {showMenu === true && 
                     
@@ -45,3 +45,4 @@ const Toolbar = (props) => {
 }
 
 export default Toolbar;
+

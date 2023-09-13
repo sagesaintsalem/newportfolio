@@ -171,8 +171,12 @@ const Projects = () => {
                     <p>I made this Ron Swanson quote generator one day over Christmas break to practice using RESTful APIs. The 'New Quote' button returns a new quote from the API and the search bar searches for quotes based on user input. I kept the styling simple to reflect the character. I had a lot of fun with this silly little project!</p></div>}
 
                 {isShowingProject == false &&
-                <div className="project">
+                <div className="current-project">
                 <h2 id='current-title'>Current Projects</h2>
+                <p>I really enjoy building websites so I am currently working on building a DisneyPlus clone in Next.js and Tailwind.</p>
+
+                <p>I recently learned how to make an API (coming soon to the site!) and now I want to take on a bigger task. There is an API for all of the contestants and episodes on the American version of <a><em>RuPaul's Drag Race</em></a> and I would like to make something similar but for the alternative reality drag show <a><em>Dragula</em></a>. </p>
+
                 <p>I am very interested in learning how to build apps from scratch following my experiences in getting Intrepid English's app uploaded to the Apple App Store. I am currently following the <a href='https://developer.android.com/courses/android-basics-compose/course' target='_blank' rel='noreferrer'>Android Developer course</a> on building an app in Kotlin with JetPack Compose and plan to move on to Flutter afterwards.</p>
                 <br></br>
                 </div>

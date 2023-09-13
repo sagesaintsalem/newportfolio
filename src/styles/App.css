@@ -1,6 +1,20 @@
 html {
     scroll-snap-type: y mandatory;
-    scroll-padding: 6rem;
+    scroll-padding: 8rem;
+}
+
+html a{
+    text-decoration: none;
+    font-weight: 600;
+    overflow: none;
+}
+
+html a:hover{
+    text-decoration: underline;
+}
+
+html a:visited{
+    text-decoration: none;
 }
 
 .App {
@@ -33,4 +47,13 @@ html {
 .topic {
     scroll-snap-align: start;
     height: 100vh;
+}
+
+@media (min-width:360px) and (max-width: 800px) {
+
+    html {
+        scroll-snap-type: y mandatory;
+        scroll-padding: 6rem;
+    }
+
 }
