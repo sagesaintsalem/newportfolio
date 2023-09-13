@@ -9,6 +9,7 @@ import WebFont from 'webfontloader';
 import { GlobalStyles } from '../src/theme/GlobalStyles';
 import {useTheme} from '../src/theme/useTheme';
 import Testimonials from './components/Testimonials';
+import CurrentProjects from './components/CurrentProjects';
 
 const Container = styled.div`
   margin: 5px auto 5px auto;
@@ -53,6 +54,10 @@ function App() {
           
           <div className='topic'>
           <Projects />
+          </div>
+
+          <div className='topic'>
+            <CurrentProjects />
           </div>
           
           <div className='topic'>

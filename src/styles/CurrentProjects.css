@@ -1,0 +1,45 @@
+.viewfinder {
+    height: 100vh;
+}
+
+.current-project {
+    padding: 0em 2em;
+    
+}
+
+#current-title {
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 1em;
+}
+
+@media (min-width:360px) and (max-width: 800px) {
+    .projectexample {
+        height: 150px;
+        width: 310px;
+        border-radius: 12px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1519px) {
+    .projectexample {
+        height: 300px;
+        width: 620px;
+        border-radius: 12px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1520px) {
+    .projectexample {
+        height: 400px;
+        width: 720px;
+        border-radius: 12px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
