@@ -36,7 +36,7 @@ function App() {
   }, [themeLoaded]);
 
   return (
-    <>
+    <div id='app'>
     {
          themeLoaded && <ThemeProvider theme={ selectedTheme }>
           <GlobalStyles/>
@@ -66,7 +66,7 @@ function App() {
         </Container>
       </ThemeProvider>
     }
-    </>
+    </div>
   );
 }
 

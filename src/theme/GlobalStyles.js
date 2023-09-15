@@ -25,10 +25,15 @@ export const GlobalStyles = createGlobalStyle`
     border-radius: 4px;
     margin-top: 5px;
     cursor: pointer;
+    border-radius: 12px;
     background-color: ${({ theme }) => theme.colors.button.background};
     color: ${({ theme }) => theme.colors.button.text};
     font-family: ${({ theme }) => theme.font};
     box-shadow: ${({ theme }) => theme.colors.button.boxshadow};
+  }
+
+  button:hover {
+    background-color: ${({theme}) => theme.colors.button.hover}
   }
 
   button.btn {
@@ -40,6 +45,14 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.colors.section.background};
     color: ${({ theme }) => theme.colors.section.text};
     transition: all 0.50s linear;
+  }
+
+  section button {
+    background-color: ${({ theme }) => theme.colors.altbutton.background};
+  }
+
+  section button:hover{
+    background-color: ${({ theme }) => theme.colors.altbutton.hover};
   }
 
   

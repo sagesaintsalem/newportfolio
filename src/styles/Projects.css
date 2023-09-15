@@ -1,5 +1,6 @@
 .page {
     height: 100vh;
+
 }
 
 
@@ -17,11 +18,13 @@
 }
 
 .project {
-    padding: 0 1em;
+    padding: 0 2em;
+    
 }
 
 .current-project {
-    padding: 0em 2em;
+    padding: 0em 1em;
+ 
     
 }
 
@@ -62,12 +65,15 @@ button a {
         column-gap: 10px;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
+        overflow-y: hidden;
         margin-bottom: 1em;
+        height: 40vh;
+       
     }
 
     .gallery_item {
         scroll-snap-align: center;
-        min-width: 50%;
+        min-width: 32%;
     }
 
     .gallery_image {

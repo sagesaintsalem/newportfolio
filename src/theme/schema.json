@@ -9,15 +9,23 @@
                 "button": {
                     "text": "#000000",
                     "background": "#FFFFFF",
-                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.3);"
+                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.3);",
+                    "hover": "#f8f6fe"
                 },
                 "section": {
                     "text":"#000000",
                     "background":"#f8f6fe"
+                },
+                "altbutton": {
+                    "text": "#000000",
+                    "background": "#f8f6fe",
+                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.3);",
+                    "hover": "#FFFFFF"
                 }
             },
             "font": "Heebo"
         },
+
         "dark" : {
             "id": "T_002",
             "name": "Dark",
@@ -28,15 +36,23 @@
                 "button": {
                     "text": "#FFFFFF",
                     "background": "#2c3e50",
-                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.72);"
+                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.72);",
+                    "hover": "#415161"
                 },
                 "section": {
                     "text":"#FFFFFF",
                     "background":"#26323d"
+                },
+                "altbutton": {
+                    "text": "#FFFFFF",
+                    "background": "#26323d",
+                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.72);",
+                    "hover": "#2c3e50"
                 }
             },
             "font": "Heebo"
         },
+
         "purple" : {
             "id": "T_003",
             "name": "Purple",
@@ -46,15 +62,23 @@
                 "button": {
                     "text": "#ebdbf5",
                     "background": "#6a0dad",
-                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.72);"
+                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.72);",
+                    "hover": "#9655c5"
                 },
                 "section": {
                     "text":"#ebdbf5",
                     "background":"#5b009e"
+                },
+                "altbutton": {
+                    "text": "#ebdbf5",
+                    "background": "#5b0093",
+                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.72);",
+                    "hover": "#ebdbf5"
                 }
             },
             "font": "Heebo"
         },
+
         "green" : {
             "id": "T_005",
             "name": "Green",
@@ -64,11 +88,18 @@
                 "button": {
                     "text": "#000000",
                     "background": "#62997d",
-                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.3);"
+                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.3);",
+                    "hover": "#91b7a4"
                 },
                 "section": {
                     "text":"#383838",
                     "background":"#83bb9d"
+                },
+                "altbutton": {
+                    "text": "#000000",
+                    "background": "#83bb9d",
+                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.3);",
+                    "hover": "#62997d"
                 }
             },
             "font": "Heebo"
