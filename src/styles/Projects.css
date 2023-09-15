@@ -104,10 +104,10 @@ button a {
     .wrap {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 5px;
         grid-row-gap: 5px;    
-        /* margin-top: 1em; */
+        margin-bottom: 1em;
         text-align: center;
         justify-items: center;
     }
