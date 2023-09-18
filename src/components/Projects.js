@@ -70,14 +70,14 @@ const Projects = () => {
                 <div className="project">
                     <div className="gallery">
                         <div className="gallery_item">
-                    <img src='./minis/minihalloweenhome.png' alt='Ritas black and orange halloween homepage. There is a picture of the 3 witches from MacScottishplay' loading='lazy' className="gallery_image"></img></div>
+                    <img src='./halloweenhome.png' alt='Ritas black and orange halloween homepage. There is a picture of the 3 witches from MacScottishplay' loading='lazy' className="gallery_image"></img></div>
 
                     <div className="gallery_item">
-                    <img src='./minis/minihalloweenmusic.png' alt='Ritas black and orange halloween music page. There is a Spotify widget of Ritas very own halloween playlist.' loading='lazy' className="gallery_image"></img>
+                    <img src='./halloweenmusic.png' alt='Ritas black and orange halloween music page. There is a Spotify widget of Ritas very own halloween playlist.' loading='lazy' className="gallery_image"></img>
                     </div>
 
                     <div className="gallery_item">
-                    <img src='./minis/minihalloweengames.png' alt='Ritas black and orange halloween video games page.' loading='lazy' className="gallery_image"></img></div>
+                    <img src='./halloweengames.png' alt='Ritas black and orange halloween video games page.' loading='lazy' className="gallery_image"></img></div>
 
                     </div>
 

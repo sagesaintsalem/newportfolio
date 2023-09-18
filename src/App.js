@@ -35,6 +35,10 @@ function App() {
     setSelectedTheme(theme);
   }, [themeLoaded]);
 
+  // useEffect(() => {
+  //   window.location.reload();
+  // }, [themeLoaded])
+
   return (
     <div id='app'>
     {
