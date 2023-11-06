@@ -205,7 +205,7 @@ const Projects = () => {
                         <p><em>Scroll left to right to see more screenshots</em></p>
                 </div>
 
-                <p>Using React, Tailwind and Vite, I set out to make a simple copy of Disney's UI, albeit with some changes. I used TMDB's API to populate the page with films and TV Shows, though I was not able to show trailers for each as none of the objects provided by the API had a trailer. This project helped me to learn Tailwind and it is now my favourite styling framework!</p>
+                <p>Using React, Tailwind and Vite, I set out to make a simple copy of Disney's UI. I used TMDB's API to populate the page with films and TV Shows, though I wasn't able to show trailers for each as the API lacks videos. This project helped me to learn Tailwind and it is now my favourite styling framework!</p>
                     
                     </div>}
                 
