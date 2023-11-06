@@ -7,6 +7,7 @@ const HALLOWEEN = "HALLOWEEN"
 const NOTE_PROJECT = "NOTE"
 const FUR_PROJECT = "FUR"
 const SWANSON = "SWANSON"
+const DIDNEY = "DIDNEY"
 
 
 
@@ -51,7 +52,13 @@ const Projects = () => {
         setIsHiding((isHiding) => !isHiding);
     }
 
-   
+   function toggleShowDidney() {
+    toggleShowProject();
+    setSelectedProject(DIDNEY)
+    setIsHiding((isHiding) => !isHiding);
+   }
+
+
 
    
 
@@ -64,6 +71,7 @@ const Projects = () => {
                     <button><a onClick={toggleShowNote}>NoteClan</a></button>
                     <button><a onClick={toggleShowFur}>furFinder</a></button>
                     <button><a onClick={toggleShowSwanson}>Swansonator</a></button>
+                    <button><a onClick={toggleShowDidney}>Disney+ Clone</a></button>
                 </div>
 
                 {selectedProject === HALLOWEEN && isShowingProject === true && 
@@ -156,7 +164,6 @@ const Projects = () => {
 
                 <div className="gallery_item">
                 <img src='./projectshots/swansearch.png' alt='Orange page with Ron Swanson in centre. A random quote from the character is featured below along with a keyword search.' loading='lazy' className="gallery_image"></img>
-
                 </div>
 
                 </div>
@@ -166,6 +173,41 @@ const Projects = () => {
                 </div>
 
                     <p>I made this Ron Swanson quote generator one day over Christmas break to practice using RESTful APIs. The 'New Quote' button returns a new quote from the API and the search bar searches for quotes based on user input. I kept the styling simple to reflect the character. I had a lot of fun with this silly little project!</p></div>}
+
+
+                {selectedProject === DIDNEY && isShowingProject === true && 
+                <div className='project'>
+                <div className='gallery'>
+
+                    <div className='gallery_item'>
+                        <img src='./projectshots/didneyclontop.png' alt='The top of the Disney+ clone is shown. A slider component with big film posters goes along the top of the screen, all of which grow slightly on hover and provide a small blurb for each film.'loading='lazy' className="gallery_image"></img>
+                    </div>
+
+                    <div className='gallery_item'>
+                        <img src='./projectshots/didneyclonmid.png' alt='The rest of the Disney+ clone is shown. A slider component with small film and TV posters goes along the top of the screen, all of which grow slightly on hover.'loading='lazy' className="gallery_image"></img>
+                    </div>
+
+                    <div className='gallery_item'>
+                        <img src='./projectshots/didneyoverlay.png' alt='Each movie or show in the Disney+ clone can be clicked on. When clicked, each item displays another picture from the film or show and an overview upon a blue-indigo gradient. This example shows the overview for a Spiderman film. ' loading='lazy' className="gallery_image" />
+                    </div>
+
+                    <div className='gallery_item'>
+                        <span>
+                            <a href='https://youtu.be/bsp8EUTfjUw' target="_blank" rel="noreferrer" >
+                            <img src='./projectshots/Click4vid.png' alt='Click here for a video demonstration!' loading='lazy' className="gallery_image" />
+                            </a>
+                        </span>
+                    </div>
+
+                </div>
+
+                <div className="smolscreen">
+                        <p><em>Scroll left to right to see more screenshots</em></p>
+                </div>
+
+                <p>Using React, Tailwind and Vite, I set out to make a simple copy of Disney's UI, albeit with some changes. I used TMDB's API to populate the page with films and TV Shows, though I was not able to show trailers for each as none of the objects provided by the API had a trailer. This project helped me to learn Tailwind and it is now my favourite styling framework!</p>
+                    
+                    </div>}
                 
             </section>
         </>
