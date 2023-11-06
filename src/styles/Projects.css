@@ -98,7 +98,7 @@ button a {
     }
 
     .page h1{
-        padding-top: 0.5em;
+        padding-top: 0.3em;
     }
 
     .wrap {
@@ -106,8 +106,8 @@ button a {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 5px;
-        grid-row-gap: 5px;    
-        margin-bottom: 1em;
+        grid-row-gap: 4px;    
+        margin-bottom: 0.5em;
         text-align: center;
         justify-items: center;
     }
