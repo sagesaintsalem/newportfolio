@@ -17,7 +17,7 @@ const About = () => {
             <p>I know that this field will be a source of constant learning and I could not be more excited! Learning new things brings me such joy and inspires me. </p>
 
             <a
-                href="/siteCV.pdf"
+                href="/ToussaintCV-1.pdf"
                 download="Rita-Toussaint-CV"
                 target="_blank"
                 rel="noreferrer">
