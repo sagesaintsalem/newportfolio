@@ -30,7 +30,7 @@
             "id": "T_002",
             "name": "Dark",
             "colors": {
-                "body": "#2c3e50",
+                "body": "#000000",
                 "text": "#FFFFFF",
                 "box-shadow": "#EFEFEF",
                 "button": {
@@ -51,58 +51,7 @@
                 }
             },
             "font": "Heebo"
-        },
-
-        "purple" : {
-            "id": "T_003",
-            "name": "Purple",
-            "colors": {
-                "body": "#6a0dad",
-                "text": "#ebdbf5",
-                "button": {
-                    "text": "#ebdbf5",
-                    "background": "#6a0dad",
-                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.72);",
-                    "hover": "#9655c5"
-                },
-                "section": {
-                    "text":"#ebdbf5",
-                    "background":"#5b009e"
-                },
-                "altbutton": {
-                    "text": "#ebdbf5",
-                    "background": "#5b0093",
-                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.72);",
-                    "hover": "#ebdbf5"
-                }
-            },
-            "font": "Heebo"
-        },
-
-        "green" : {
-            "id": "T_005",
-            "name": "Green",
-            "colors": {
-                "body": "#62997d",
-                "text": "#000000",
-                "button": {
-                    "text": "#000000",
-                    "background": "#62997d",
-                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.3);",
-                    "hover": "#91b7a4"
-                },
-                "section": {
-                    "text":"#383838",
-                    "background":"#83bb9d"
-                },
-                "altbutton": {
-                    "text": "#000000",
-                    "background": "#83bb9d",
-                    "boxshadow": "0px 0px 15px -5px rgba(0,0,0,0.3);",
-                    "hover": "#62997d"
-                }
-            },
-            "font": "Heebo"
         }
+        
     }
 }

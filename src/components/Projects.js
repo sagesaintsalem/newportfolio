@@ -64,7 +64,7 @@ const Projects = () => {
 
     return(
         <>
-            <section className="page">
+            <section className="page" id='projects'>
                 <h1>Projects</h1>
                 <div className="wrap">
                     <button><a onClick={toggleShowHalloween}>Halloween Hints</a></button>

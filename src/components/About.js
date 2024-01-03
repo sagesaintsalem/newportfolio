@@ -1,31 +1,56 @@
-import Card from "./Card";
 import '../styles/About.css';
+
 
 const About = () => {
 
     return(
         <div className="about">
-        <div className="title">
-        <h1>Hi! Welcome to my site! </h1>
-        </div>
+            <div className="title">
+            <img src="./newchilli.png"></img>
+            
+                <div className='intro'>
+                <h1>I&apos;m Rita Toussaint, I'm a CodeClan graduate, a career changer, and a web developer! </h1>
 
-        <div className='intro'>
-          
-            <p>I'm Rita Toussaint and I'm a CodeClan graduate, a career changer, and a web developer! 
-                    I have a flair for front-end but I also have skills to share in back-end development too! I spend a lot of my time sharpening my skills, attending networking events and workshops, keeping my LinkedIn page up to date and building my portfolio site (psst - you’re already here!). Today, I am doing freelance work for English learning company, Intrepid English.</p>
-                       
-            <p>I know that this field will be a source of constant learning and I could not be more excited! Learning new things brings me such joy and inspires me. </p>
+                <div className='project-link'>
+                <a href="#projects">My Projects →</a>
+                </div>
 
-            <a
-                href="/ToussaintCV-1.pdf"
-                download="Rita-Toussaint-CV"
-                target="_blank"
-                rel="noreferrer">
-                    <button>My CV</button>
-            </a>
-
-
+                
+                    
+                </div>
             </div>
+            <div className='more-info'>
+            <p>
+                            I have a flair for front-end but I also have skills to share in back-end development too! I spend a lot of my time sharpening my skills, attending networking events and workshops, keeping my LinkedIn page up to date and building my portfolio site (psst - you&apos;re already here!). Today, I am doing freelance work for English learning company, Intrepid English, and volunteering with the Scottish Tech Army.</p>
+            <div className='skills-and-stack'>
+                    <div className='stack'>
+                    <p className='list-title'>Stack</p>
+                    <ul className='list'>
+                      <li >React</li>
+                      <li >Next.js</li>
+                      <li >Tailwind</li>
+                      <li >Bootstrap</li>
+                      <li >Javascript</li>
+                      <li >Python</li>
+                      <li >Java</li>
+                      <li >Axios</li>
+                      <li >Framer Motion</li>
+                    </ul>
+                    </div>
+
+                    <div className='skills'>
+                    <p className='list-title'>Skills</p>
+                    <ul className='list'>
+                      <li >French</li>
+                      <li >Neurodiversity Advocacy</li>
+                      <li >Agile</li>
+                      <li >App Publishing</li>
+                      <li >Teaching</li>
+                    </ul>
+                    </div>
+                  </div>  
+            </div>
+        
         </div>
     )
 }

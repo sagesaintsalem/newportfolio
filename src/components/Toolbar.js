@@ -1,45 +1,30 @@
-import ThemePicker from "./ThemePicker";
 import '../styles/Toolbar.css';
-import { useState } from "react";
-import ClickAwayListener from 'react-click-away-listener';
-import { motion, animate } from "framer-motion";
-import { TiThMenuOutline } from 'react-icons/ti'
 
-const Toolbar = (props) => {
-    const toolbarSetter = props.setter
-    const toolbarNewTheme = props.newTheme
 
-    const [showMenu, setShowMenu] = useState(false)
 
-  
-
-    function toggleMenu () {
-        setShowMenu((showMenu) => !showMenu)
-    }
-
-    const handleClickAway = () => {
-		setShowMenu(false);
-	};
+const Toolbar = () => {
+    
 
     return (
         <div className="toolbar">
             <h1>Rita Toussaint</h1>
 
-            <ClickAwayListener onClickAway={handleClickAway}>
-                <span><motion.svg className="borger" 
-                alt='3 transparent rectangles signifying a menu' 
-                onClick={toggleMenu}
-                animate={{color: showMenu ? '#FFEA00':"#000000"}}>
-                    <TiThMenuOutline />
-                </motion.svg>
-                
-                    {showMenu === true && 
+            <div className="contact">
+                <div className='social-contact'>
+                <a href='https://github.com/sagesaintsalem' target='_blank'>
+                    <img src='./github.png' alt='Githubs famous squid-cat logo'></img></a>
                     
-                        <ThemePicker setter={toolbarSetter} newTheme={toolbarNewTheme} />
-                    
-                    }
-                </span>
-            </ClickAwayListener>
+                <a href='https://www.linkedin.com/in/rita-toussaint' target='_blank'>
+                    <img src='./linkedblack.png' alt='Linked In logo in black, shows the word in'></img></a>
+                </div>
+                <a
+                href="/ToussaintCV-1.pdf"
+                download="Rita-Toussaint-CV"
+                target="_blank"
+                rel="noreferrer">
+                    <button>My CV</button>
+                </a>
+            </div>
         </div>
     )
 }

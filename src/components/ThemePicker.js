@@ -48,7 +48,7 @@ const ThemePicker = (props) => {
     return (
         <>
             <div className='picker' >
-            <h3>Themes</h3>
+            
                 <ul className='container'>
                     
                 {
@@ -57,13 +57,7 @@ const ThemePicker = (props) => {
                         <ThemeCard theme={data[theme]} key={data[theme].id} />
                     ))
             }
-            
                 </ul>
-               <div>
-                <a href='https://github.com/sagesaintsalem' target='_blank'><img src='./github.png' alt='Githubs famous squid-cat logo'></img></a>
-                <a href='https://www.linkedin.com/in/rita-toussaint' target='_blank'><img src='./linkedblack.png' alt='Linked In logo in black, shows the word in'></img></a>
-               </div>
-                
             </div>
 
         </>

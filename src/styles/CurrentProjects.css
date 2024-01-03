@@ -3,8 +3,16 @@
 }
 
 .current-project {
-    padding: 0em 2em;
+    padding: 0em 1em;
+    display: flex;
+    justify-content: space-around;
     
+}
+
+.current-text {
+    display: flex;
+    align-items: center;
+    width: 40%;
 }
 
 #current-title {

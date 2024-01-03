@@ -2,58 +2,50 @@ import { createGlobalStyle} from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   body {
-    background: ${({ theme }) => theme.colors.body};
-    color: ${({ theme }) => theme.colors.text};
-    font-family: ${({ theme }) => theme.font};
+    background: #000000;
+    color: #FFFFFF;
+    font-family: "Heebo", sans-serif;
     margin: 0;
     transition: all 0.50s linear;
   }
 
   a {
     cursor: pointer;
+    text-decoration: bold;
+    color: #c4b5fd;
+  }
+
+  a::hover {
+    text-decoration: underline;
   }
 
   a:visited {
-    color: ${({ theme }) => theme.colors.text};
+    color: #86efac;
   }
 
   button {
     border: 0;
     display: inline-block;
-    padding: 12px 24px;
-    font-size: 14px;
+    padding: 6px 12px;
+    font-size: 18px;
     border-radius: 4px;
     margin-top: 5px;
     cursor: pointer;
-    border-radius: 12px;
-    background-color: ${({ theme }) => theme.colors.button.background};
-    color: ${({ theme }) => theme.colors.button.text};
-    font-family: ${({ theme }) => theme.font};
-    box-shadow: ${({ theme }) => theme.colors.button.boxshadow};
+    background-color: #c4b5fd;
+    color: #000000;
   }
 
   button:hover {
-    background-color: ${({theme}) => theme.colors.button.hover}
+    background-color: #E8E8FF;
   }
 
-  button.btn {
-    background-color: ${({ theme }) => theme.colors.button.background};
-    color: ${({ theme }) => theme.colors.button.text};
+  button a {
+    color: black;
   }
 
-  section {
-    background-color: ${({ theme }) => theme.colors.section.background};
-    color: ${({ theme }) => theme.colors.section.text};
-    transition: all 0.50s linear;
-  }
+  
 
-  section button {
-    background-color: ${({ theme }) => theme.colors.altbutton.background};
-  }
-
-  section button:hover{
-    background-color: ${({ theme }) => theme.colors.altbutton.hover};
-  }
+  
 
   
 
