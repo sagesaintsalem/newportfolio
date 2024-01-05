@@ -9,6 +9,11 @@
     
 }
 
+.in-progress {
+    display: flex;
+    flex-direction: column;
+}
+
 .current-text {
     display: flex;
     align-items: center;
@@ -38,12 +43,14 @@
 
     #in-progress {
         width: 50vw;
+        
     }
+
+
 
     #tech-army {
         width: 350px;
         height: 300px;
-        margin-left: 14em;
     }
     
     #current-title {
@@ -65,13 +72,29 @@
 }
 
 @media (min-width: 801px) and (max-width: 1519px) {
-    .projectexample {
-        height: 300px;
-        width: 620px;
-        border-radius: 12px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+   
+
+    .current-project {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 1em;
+        
+    }
+
+    .current-text {
+        width: 750px;
+    }
+
+   
+
+    #map {
+        height: 400px;
+        width: 500px;
+    }
+
+    .map {
+        margin-left: 140px;
     }
 }
 

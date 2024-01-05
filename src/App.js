@@ -19,38 +19,19 @@ function App() {
 
   const { scrollYProgress } = useScroll()  
 
-  const {theme, themeLoaded, getFonts} = useTheme();
-  const [selectedTheme, setSelectedTheme] = useState(theme);
-  const [newTheme, setNewTheme] = useState();
-
-  useEffect(() => {
-    WebFont.load({
-      google: {
-        families: getFonts()
-      }
-    });
-  });
-
-  useEffect(() => {
-    setSelectedTheme(theme);
-  }, [themeLoaded]);
-
-  // useEffect(() => {
-  //   window.location.reload();
-  // }, [themeLoaded])
+  
 
   return (
     <div id='app'>
-    {
-         themeLoaded && <ThemeProvider theme={ selectedTheme }>
+    
           <GlobalStyles/>
-          <Container style={{fontFamily: selectedTheme.font}}>
+          
             
           <motion.div
             className="progress-bar"
             style={{ scaleX: scrollYProgress }}
           />
-          <Toolbar className="toolbar" setter={ setSelectedTheme } newTheme={ newTheme }/>
+          <Toolbar className="toolbar"/>
           
           <div className='topic'>
           <About />
@@ -67,9 +48,9 @@ function App() {
           <div className='topic'>
           <Testimonials />
           </div>
-        </Container>
-      </ThemeProvider>
-    }
+        
+     
+    
     </div>
   );
 }

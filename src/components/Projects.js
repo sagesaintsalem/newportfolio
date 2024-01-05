@@ -76,28 +76,39 @@ const Projects = () => {
 
                 {selectedProject === HALLOWEEN && isShowingProject === true && 
                 <div className="project">
-                    <div className="gallery">
-                        <div className="gallery_item">
-                    <img src='./halloweenhome.png' alt='Ritas black and orange halloween homepage. There is a picture of the 3 witches from MacScottishplay' loading='lazy' className="gallery_image"></img></div>
+                        <div className='heading'>
+                            <strong><p>Halloween Hints</p></strong>
+                            <em><p>HTML, Bootstrap</p></em>
+                        </div>
+                            <div className="gallery">
+                                <div className="gallery_item">
+                                    <img src='./halloweenhome.png' alt='Ritas black and orange halloween homepage. There is a picture of the 3 witches from MacScottishplay' loading='lazy' className="gallery_image"></img>
+                                </div>
 
-                    <div className="gallery_item">
-                    <img src='./halloweenmusic.png' alt='Ritas black and orange halloween music page. There is a Spotify widget of Ritas very own halloween playlist.' loading='lazy' className="gallery_image"></img>
-                    </div>
+                                <div className="gallery_item">
+                                    <img src='./halloweenmusic.png' alt='Ritas black and orange halloween music page. There is a Spotify widget of Ritas very own halloween playlist.' loading='lazy' className="gallery_image"></img>
+                                </div>
 
-                    <div className="gallery_item">
-                    <img src='./halloweengames.png' alt='Ritas black and orange halloween video games page.' loading='lazy' className="gallery_image"></img></div>
+                                <div className="gallery_item">
+                                    <img src='./halloweengames.png' alt='Ritas black and orange halloween video games page.' loading='lazy' className="gallery_image"></img>
+                                </div>
+                            </div>
 
-                    </div>
+                        <div className="smolscreen">
+                            <p><em>Scroll left to right to see more screenshots</em></p>
+                        </div>
 
-                    <div className="smolscreen">
-                        <p><em>Scroll left to right to see more screenshots</em></p>
-                    </div>
-
-                    <p>This was the very first website that I built, before I had even started at CodeClan. Written in HTML and CSS, held together with Bootstrap. I really enjoyed making this site as it's all about my favourite day of the year - Halloween! </p></div>}
+                        <p className='about-project'>This was the very first website that I built, before I had even started at CodeClan. I really enjoyed making this site as it's all about my favourite day of the year - Halloween! </p>
+                </div>
+                    }
                 
                 {selectedProject === NOTE_PROJECT && isShowingProject === true &&
                 <div className="project">
-                <div className="gallery">
+                    <div className='heading'>
+                        <strong><p>NoteClan</p></strong>
+                        <em><p>Python, Flask, SQL</p></em>
+                    </div>
+                    <div className="gallery">
 
                     <div className="gallery_item">
                         <img id='image-1' src='./projectshots/noteclanhome.png' alt='Noteclan home' loading="lazy" className="gallery_image" /></div>
@@ -117,11 +128,18 @@ const Projects = () => {
                         <p><em>Scroll left to right to see more screenshots</em></p>
                     </div>
 
-                <p>This was my first project at CodeClan, written in Python, Flask and MongoDB, inspired by my own struggles in booking rehearsal space for singing practice. This is a basic CRUD app with 90s-inspired styling.</p></div>}
+                <p className='about-project'>This was my first project at CodeClan, inspired by my own struggles in booking rehearsal space for singing practice. This is a basic CRUD app with 90s-inspired styling.</p>
+                </div>
+                }
                 
                 {selectedProject === FUR_PROJECT && isShowingProject === true &&
                 <div className="project">
-                <div className="gallery">
+                    <div className='heading'>
+                        <strong><p>furFinder</p></strong>
+                        <em><p>React, MongoDB</p></em>
+
+                    </div>
+                    <div className="gallery">
 
                     <div className="gallery_item">
                             <img id='image-1' src='./projectshots/home.png' alt='furFinder home' loading="lazy" className="gallery_image" />
@@ -149,12 +167,18 @@ const Projects = () => {
                         <p><em>Scroll left to right to see more screenshots</em></p>
                 </div>
 
-                <p>This was a group project written in React. It is a pretend animal adoption service designed to resemble Tinder. I was mainly responsible for the styling, writing up the animal database and writing the carousels which showed all available cats and dogs. My team and I got along extremely well, we were able to clearly and evenly divide up the tasks and we had fun! </p></div>}
+                <p className='about-project'>This was a group project written in React. It is a pretend animal adoption service designed to resemble Tinder. I was mainly responsible for the styling, writing up the animal database and writing the carousels which showed all available cats and dogs. My team and I got along extremely well, we were able to clearly and evenly divide up the tasks and we had fun! </p>
+                </div>
+                }
 
                 
 
                 {selectedProject === SWANSON && isShowingProject === true &&
                 <div className="project">
+                    <div className='heading'>
+                            <strong><p>Swansonator</p></strong>
+                            <em><p>React, RESTful API</p></em>
+                    </div>
                 <div className="gallery">
 
                 <div className="gallery_item">
@@ -172,11 +196,15 @@ const Projects = () => {
                         <p><em>Scroll left to right to see more screenshots</em></p>
                 </div>
 
-                    <p>I made this Ron Swanson quote generator one day over Christmas break to practice using RESTful APIs. The 'New Quote' button returns a new quote from the API and the search bar searches for quotes based on user input. I kept the styling simple to reflect the character. I had a lot of fun with this silly little project!</p></div>}
+                    <p className='about-project'>I made this Ron Swanson quote generator one day over Christmas break to practice using RESTful APIs. The 'New Quote' button returns a new quote from the API and the search bar searches for quotes based on user input. I kept the styling simple to reflect the character. I had a lot of fun with this silly little project!</p></div>}
 
 
                 {selectedProject === DIDNEY && isShowingProject === true && 
                 <div className='project'>
+                    <div className='heading'>
+                            <strong><p>Disney+ Clone</p></strong>
+                            <em><p>React, Tailwind, Vite, Axios</p></em>
+                    </div>
                 <div className='gallery'>
 
                     <div className='gallery_item'>
@@ -205,7 +233,7 @@ const Projects = () => {
                         <p><em>Scroll left to right to see more screenshots</em></p>
                 </div>
 
-                <p>Using React, Tailwind and Vite, I set out to make a simple copy of Disney's UI. I used TMDB's API to populate the page with films and TV Shows, though I wasn't able to show trailers for each as the API lacks videos. This project helped me to learn Tailwind and it is now my favourite styling framework!</p>
+                <p className='about-project'>Using React, Tailwind and Vite, I set out to make a simple copy of Disney's UI. I used TMDB's API to populate the page with films and TV Shows, though I wasn't able to show trailers for each as the API lacks videos. This project helped me to learn Tailwind and it is now my favourite styling framework!</p>
                     
                     </div>}
                 
