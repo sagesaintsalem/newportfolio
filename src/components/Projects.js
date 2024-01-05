@@ -67,11 +67,11 @@ const Projects = () => {
             <section className="page" id='projects'>
                 <h1>Projects</h1>
                 <div className="wrap">
-                    <button><a onClick={toggleShowHalloween}>Halloween Hints</a></button>
-                    <button><a onClick={toggleShowNote}>NoteClan</a></button>
-                    <button><a onClick={toggleShowFur}>furFinder</a></button>
-                    <button><a onClick={toggleShowSwanson}>Swansonator</a></button>
-                    <button><a onClick={toggleShowDidney}>Disney+ Clone</a></button>
+                    <button id='project-button'><a onClick={toggleShowHalloween}>Halloween Hints</a></button>
+                    <button id='project-button'><a onClick={toggleShowNote}>NoteClan</a></button>
+                    <button id='project-button'><a onClick={toggleShowFur}>furFinder</a></button>
+                    <button id='project-button'><a onClick={toggleShowSwanson}>Swansonator</a></button>
+                    <button id='project-button'><a onClick={toggleShowDidney}>Disney+ Clone</a></button>
                 </div>
 
                 {selectedProject === HALLOWEEN && isShowingProject === true && 
@@ -149,7 +149,7 @@ const Projects = () => {
                         <p><em>Scroll left to right to see more screenshots</em></p>
                 </div>
 
-                <p>This was a group project written in React. It is a pretend animal adoption service designed to resemble Tinder. I was mainly responisble for the styling, writing up the animal database and writing the carousels which showed all available cats and dogs. My team and I got along extremely well, we were able to clearly and evenly divide up the tasks and we had fun! </p></div>}
+                <p>This was a group project written in React. It is a pretend animal adoption service designed to resemble Tinder. I was mainly responsible for the styling, writing up the animal database and writing the carousels which showed all available cats and dogs. My team and I got along extremely well, we were able to clearly and evenly divide up the tasks and we had fun! </p></div>}
 
                 
 

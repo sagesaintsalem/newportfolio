@@ -33,15 +33,18 @@
     font-size: 12px;
 }
 
-button {
+#project-button {
     border-radius: 0.75rem;
-    height: 4rem;
-    width: 10rem;
+    height: 3rem;
+    width: 9rem;
+    background-color: #AEAEFF;
+    border: 0;
 }
 
-button a {
+#project-button a {
     font-size: 1rem;
     font-weight: 600;
+    color: black;
 }
 
 @media (min-width: 1520px) {

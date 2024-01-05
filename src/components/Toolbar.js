@@ -22,7 +22,7 @@ const Toolbar = () => {
                 download="Rita-Toussaint-CV"
                 target="_blank"
                 rel="noreferrer">
-                    <button>My CV</button>
+                    <button id='cv-button'>My CV</button>
                 </a>
             </div>
         </div>

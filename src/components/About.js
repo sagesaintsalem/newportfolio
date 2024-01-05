@@ -20,7 +20,7 @@ const About = () => {
                 </div>
             </div>
             <div className='more-info'>
-            <p>
+            <p className='about-me'>
                             I have a flair for front-end but I also have skills to share in back-end development too! I spend a lot of my time sharpening my skills, attending networking events and workshops, keeping my LinkedIn page up to date and building my portfolio site (psst - you&apos;re already here!). Today, I am doing freelance work for English learning company, Intrepid English, and volunteering with the Scottish Tech Army.</p>
             <div className='skills-and-stack'>
                     <div className='stack'>
@@ -35,6 +35,9 @@ const About = () => {
                       <li >Java</li>
                       <li >Axios</li>
                       <li >Framer Motion</li>
+                      <li>SQL</li>
+                      <li>PostGres</li>
+                      <li>MongoDB</li>
                     </ul>
                     </div>
 
@@ -42,10 +45,10 @@ const About = () => {
                     <p className='list-title'>Skills</p>
                     <ul className='list'>
                       <li >French</li>
-                      <li >Neurodiversity Advocacy</li>
                       <li >Agile</li>
-                      <li >App Publishing</li>
                       <li >Teaching</li>
+                      <li >App Publishing</li>
+                      <li >Neurodiversity Advocacy</li>
                     </ul>
                     </div>
                   </div>  
