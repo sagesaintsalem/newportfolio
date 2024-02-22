@@ -4,9 +4,9 @@ import '../styles/About.css';
 const About = () => {
 
     return(
-        <div className="about">
+        <div className="about" accesskey="3">
             <div className="title">
-            <img src="./newchilli.png"></img>
+            <img src="./newchilli.png" alt="A green chilli with a curly stem and round silver glasses. This is supposed to represent Rita."></img>
             
                 <div className='intro'>
                 <h1>I&apos;m Rita Toussaint, I'm a CodeClan graduate, a career changer, and a web developer! </h1>
@@ -34,10 +34,12 @@ const About = () => {
                       <li >Python</li>
                       <li >Java</li>
                       <li >Axios</li>
-                      <li >Framer Motion</li>
                       <li>SQL</li>
                       <li>PostGres</li>
                       <li>MongoDB</li>
+                      <li>Insomnia</li>
+                      <li>Cypress</li>
+                      <li>Postman</li>
                     </ul>
                     </div>
 
@@ -49,6 +51,7 @@ const About = () => {
                       <li >Teaching</li>
                       <li >App Publishing</li>
                       <li >Neurodiversity Advocacy</li>
+                      <li>Project Management</li>
                     </ul>
                     </div>
                   </div>  
