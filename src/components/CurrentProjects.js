@@ -9,22 +9,21 @@ function CurrentProjects() {
         
         <div className='current-text'>
           <div id='in-progress'>
-            <div className='project-plans'>
-              <p>After building a cosmetic clone of Disney+, I am now very keen to build a proper streaming site of my own. My idea is to make a fictional site that streams old films which are in public domain. I am currently in the planning phase of this project.
-                  
-              I recently learned how to make an API (coming soon to the site!) and now I want to take on a bigger task. There is an API for all of the contestants and episodes on the American version of <a href='https://en.wikipedia.org/wiki/RuPaul%27s_Drag_Race' target='_blank' rel='noreferrer' ><em>RuPaul&apos;s Drag Race</em></a> and I would like to make something similar but for the alternative reality drag show <a href='https://en.wikipedia.org/wiki/The_Boulet_Brothers%27_Dragula' target='_blank' rel='noreferrer'><em>Dragula</em></a>. </p>
-            </div>
         
 
             <div id='tech-army'>
-                <p>I am also a member of the Scottish Tech Army, which is a nonprofit which aims to provide voluntary tech services to charities.  I am currently helping to make an interactive map for the charity with Google Maps. Here&apos;s an example of a map I made to help people find dog-friendly pubs in Glasgow! → </p>
+                <p>I am also a member of the Scottish Tech Army, which is a nonprofit which aims to provide voluntary tech services to charities. I am currently revamping a charity's website design and I worked in a team to build an interactive map for Scottish Tech Army to showcase their projects! → </p>
             </div>
           </div>
         </div>
         
 
         <div className='map'>
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1QsdLBCR4gvkRmdCgSFNxGfxp19A7wks&ehbc=2E312F" width="500" height="350" id='map'></iframe>
+          <span>
+            <a href="https://www.scottishtecharmy.org/our-projects" target='_blank' rel="noreferrer">
+              <img src="/map2.png" id="map" alt='A small screenshot of a black and white map with colourful markers'></img>
+            </a>
+          </span>
         </div>
         </div>
 

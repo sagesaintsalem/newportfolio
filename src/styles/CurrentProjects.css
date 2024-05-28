@@ -52,11 +52,12 @@
     }
 
     #map {
-        height: 240px;
-        width: 300px;
-        margin-top: 0.8em;
-        margin-left: 20px;
+        border-radius: 6px;
+        width: 200px;
+        height: 137px;
+        margin-left: 98px;
     }
+   
 
     .map {
         height: 400px;
@@ -79,15 +80,17 @@
         width: 750px;
     }
 
-   
-
     #map {
-        height: 400px;
-        width: 500px;
+        border-radius: 6px;
+        width: 400px;
+        height: 275px;
+        margin: auto;
     }
 
+   
+
     .map {
-        margin-left: 140px;
+        margin-left: 200px;
     }
 }
 
@@ -100,5 +103,13 @@
         margin-left: auto;
         margin-right: auto;
     }
+    
+    #map {
+        border-radius: 6px;
+    }
 
+    #map:hover {
+        scale: 105%;
+        transition: all 0.5s ease-in;
+    }
 }
