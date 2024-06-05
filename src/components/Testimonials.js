@@ -32,6 +32,10 @@ const Testimonials = () => {
             name: "Tony Prasad",
             quote: "Rita is a highly enthusiastic and engaged team member. She proves her passion through the creativity she adds to her work. I respect Rita's honesty and the character that she brings to work. I wish Rita the best of luck in her future endeavours."
         },
+        {
+            name: "Abbi Jackson, Birthlink",
+            quote: "We have benefited enormously as a charity from Rita’s stickability and tenacity. We would not be where we are now without her expertise, commitment and follow through. I expect that she would be an asset to any employer as she has been for us."
+        }
     ]
     
    
