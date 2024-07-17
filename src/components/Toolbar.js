@@ -18,7 +18,7 @@ const Toolbar = () => {
                     <img src='./linkedblack.png' alt='Linked In logo in black, shows the word in'></img></a>
                 </div>
                 <a
-                href="/RToussaintCV.pdf"
+                href="/RitaToussaintCV.pdf"
                 download="Rita-Toussaint-CV"
                 target="_blank"
                 rel="noreferrer"

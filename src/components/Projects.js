@@ -8,6 +8,7 @@ const NOTE_PROJECT = "NOTE"
 const FUR_PROJECT = "FUR"
 const SWANSON = "SWANSON"
 const DIDNEY = "DIDNEY"
+const BIRTHLINK = "BIRTHLINK"
 
 
 
@@ -58,6 +59,12 @@ const Projects = () => {
     setIsHiding((isHiding) => !isHiding);
    }
 
+   function toggleShowBirthlink() {
+    toggleShowProject();
+    setSelectedProject(BIRTHLINK)
+    setIsHiding((isHiding) => !isHiding);
+   }
+
 
 
    
@@ -72,6 +79,8 @@ const Projects = () => {
                     <button id='project-button'><a onClick={toggleShowFur}>furFinder</a></button>
                     <button id='project-button'><a onClick={toggleShowSwanson}>Swansonator</a></button>
                     <button id='project-button'><a onClick={toggleShowDidney}>Disney+ Clone</a></button>
+                    <button id='project-button'><a onClick={toggleShowBirthlink}>Birthlink</a></button>
+
                 </div>
 
                 {selectedProject === HALLOWEEN && isShowingProject === true && 
@@ -236,6 +245,33 @@ const Projects = () => {
                 <p className='about-project'>Using React, Tailwind and Vite, I set out to make a simple copy of Disney's UI. I used TMDB's API to populate the page with films and TV Shows, though I wasn't able to show trailers for each as the API lacks videos. This project helped me to learn Tailwind and it is now my favourite styling framework!</p>
                     
                     </div>}
+
+                    {selectedProject === BIRTHLINK && isShowingProject === true &&
+                <div className="project">
+                    <div className='heading'>
+                        <strong><p>Birthlink</p></strong>
+                        <em><p>Wordpress, Divi Builder, CSS</p></em>
+                    </div>
+                    <div className="gallery">
+
+                    <div className="gallery_item">
+                        <img id='image-1' src='./projectshots/birthlinkhome.png' alt='Noteclan home' loading="lazy" className="gallery_image" /></div>
+
+                        <div className="gallery_item">
+                        <img id='image-2' src='./projectshots/birthlinkdonate.png' alt='Note home' loading="lazy" className="gallery_image"/></div>
+
+                        <div className="gallery_item">
+                        <img id='image-3' src='./projectshots/birthlinkabout.png' alt='Phone home' loading="lazy" className="gallery_image"/></div>
+
+                    </div>
+
+                    <div className="smolscreen">
+                        <p><em>Scroll left to right to see more screenshots</em></p>
+                    </div>
+
+                <p className='about-project'>I was given this project by Scottish Tech Army. Birthlink were looking for someone to revamp their website design into something more modern and colourful. This project taught me the importance of working closely with clients.</p>
+                </div>
+                }
                 
             </section>
         </>
