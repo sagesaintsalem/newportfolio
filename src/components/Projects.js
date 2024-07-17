@@ -255,13 +255,13 @@ const Projects = () => {
                     <div className="gallery">
 
                     <div className="gallery_item">
-                        <img id='image-1' src='./projectshots/birthlinkhome.png' alt='Noteclan home' loading="lazy" className="gallery_image" /></div>
+                        <img id='image-1' src='./projectshots/birthlinkhome.png' alt='Birthlink home' loading="lazy" className="gallery_image" /></div>
 
                         <div className="gallery_item">
-                        <img id='image-2' src='./projectshots/birthlinkdonate.png' alt='Note home' loading="lazy" className="gallery_image"/></div>
+                        <img id='image-2' src='./projectshots/birthlinkdonate.png' alt='Birthlinks donate page' loading="lazy" className="gallery_image"/></div>
 
                         <div className="gallery_item">
-                        <img id='image-3' src='./projectshots/birthlinkabout.png' alt='Phone home' loading="lazy" className="gallery_image"/></div>
+                        <img id='image-3' src='./projectshots/birthlinkabout.png' alt='Birthlinks history page' loading="lazy" className="gallery_image"/></div>
 
                     </div>
 
