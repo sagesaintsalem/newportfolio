@@ -51,15 +51,17 @@
         padding-top: 2em;
     }
 
-    #map {
+    #cproject {
         border-radius: 6px;
-        width: 200px;
-        height: 137px;
-        margin-left: 90px;
+        border: solid 2px ;
+        border-color:#c4b5fd;
+        width: 160px;
+        height: 240px;
+        margin: auto;
     }
    
 
-    .map {
+    .cproject {
         height: 400px;
         width: fit-content;
     }
@@ -80,17 +82,19 @@
         width: 750px;
     }
 
-    #map {
+    #cproject {
         border-radius: 6px;
-        width: 400px;
-        height: 275px;
+        border: solid 2px ;
+        border-color:#c4b5fd;
+        width: 300px;
+        height: 405px;
         margin: auto;
     }
 
    
 
-    .map {
-        margin-left: 200px;
+    .cproject {
+        margin: auto;
     }
 }
 
@@ -104,11 +108,13 @@
         margin-right: auto;
     }
     
-    #map {
+    #cproject {
         border-radius: 6px;
+        border: solid 2px ;
+        border-color:#c4b5fd;
     }
 
-    #map:hover {
+    #cproject:hover {
         scale: 105%;
         transition: all 0.5s ease-in;
     }

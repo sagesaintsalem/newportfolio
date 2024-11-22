@@ -9,6 +9,7 @@ const FUR_PROJECT = "FUR"
 const SWANSON = "SWANSON"
 const DIDNEY = "DIDNEY"
 const BIRTHLINK = "BIRTHLINK"
+const STA = "STA"
 
 
 
@@ -65,7 +66,11 @@ const Projects = () => {
     setIsHiding((isHiding) => !isHiding);
    }
 
-
+   function toggleShowSTA() {
+    toggleShowProject();
+    setSelectedProject(STA)
+    setIsHiding((isHiding) => isHiding);
+   }
 
    
 
@@ -80,6 +85,7 @@ const Projects = () => {
                     <button id='project-button'><a onClick={toggleShowSwanson}>Swansonator</a></button>
                     <button id='project-button'><a onClick={toggleShowDidney}>Disney+ Clone</a></button>
                     <button id='project-button'><a onClick={toggleShowBirthlink}>Birthlink</a></button>
+                    <button id='project-button'><a onClick={toggleShowSTA}>STA Map</a></button>
 
                 </div>
 
@@ -273,6 +279,30 @@ const Projects = () => {
                 </div>
                 }
                 
+
+                {selectedProject === STA && isShowingProject === true &&
+                <div className='project'>
+                    <div className='heading'>
+                        <strong><p>STA Map</p></strong>
+                        <em><p>HTML, CSS, JS, GoogleMaps, AWS</p></em>
+                    </div>
+                    <div className='gallery'>
+                        <div className='gallery_item'>
+                            <img src="./projectshots/1stmap.png" alt='A small screenshot of a black and white map with colourful markers' loading='lazy' className='gallery_image'></img>
+                        </div>
+                        <div className='gallery_item'>
+                            <img src="./projectshots/2ndmap.png" alt='A small screenshot of a black and white map with colourful markers' loading='lazy' className='gallery_image'></img>
+                        </div>
+                        <div className='gallery_item'>
+                            <img src="./projectshots/3rdmap.png" alt='A small screenshot of a black and white map with colourful markers' loading='lazy' className='gallery_image'></img>
+                        </div>
+                    </div>
+                    <div className="smolscreen">
+                        <p><em>Scroll left to right to see more screenshots</em></p>
+                    </div>
+                    <p className='about-project'>I was assigned this project by Scottish Tech Army for their website. Myself and a colleague were tasked with creating an interactive map which displayed all the non-profits and charities that STA helped and how many hours went into each project. The style of the map was created in Google Maps Platform and the logic of the widget was written with HTML, CSS and vanilla JS.</p>
+                </div>
+                }
             </section>
         </>
     )

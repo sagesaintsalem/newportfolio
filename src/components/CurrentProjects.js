@@ -12,18 +12,18 @@ function CurrentProjects() {
         
 
             <div id='tech-army'>
-                <p>I am a member of the Scottish Tech Army, which is a nonprofit which aims to provide voluntary tech services to charities. I recently worked in a team to build an interactive map for Scottish Tech Army to showcase their projects! → </p>
+                <p>I am currently working at Leonardo through WithYouWithMe (WYWM) as a software developer! I trained in C++ and created a little project, Chataway, to demonstrate my abilities (see screenshot) </p>
 
-                <p>I am taking the summer to upskill, focusing on sharpening my Java skills and learning C++. </p>
+                <p>I am working in embedded systems, which is very new to me. I'm excited about everything I'm going to learn! Other than that, I'm thinking of adding a small blog to this site so that I can post regular updates about my career. Stay tuned! </p>
             </div>
           </div>
         </div>
         
 
-        <div className='map'>
+        <div className='cproject'>
           <span>
-            <a href="https://www.scottishtecharmy.org/our-projects" target='_blank' rel="noreferrer">
-              <img src="/map2.png" id="map" alt='A small screenshot of a black and white map with colourful markers'></img>
+            <a href="https://github.com/sagesaintsalem/chataway" target='_blank' rel="noreferrer">
+              <img src="./projectshots/exeinIMPROVEDaction.png" id='cproject' ></img>
             </a>
           </span>
         </div>
