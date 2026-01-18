@@ -30,7 +30,6 @@ const About = () => {
                       <li >Python</li>
                       <li >Java</li>
                       <li>C++</li>
-                      <li>ADA </li>
                       <li>SQL</li>
                       <li >React</li>
                       <li >Next.js</li>
@@ -50,6 +49,7 @@ const About = () => {
                       <li >App Publishing</li>
                       <li >Neurodiversity Advocacy</li>
                       <li>Project Management</li>
+                      <li>Figma</li>
                     </ul>
                     </div>
                   </div>  
