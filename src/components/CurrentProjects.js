@@ -12,21 +12,11 @@ function CurrentProjects() {
         
 
             <div id='tech-army'>
-                <p>I am currently working at Leonardo through WithYouWithMe (WYWM) as a software developer! I trained in C++ and created a little project, Chataway, to demonstrate my abilities (see screenshot) </p>
-
-                <p>I am working in embedded systems, which is very new to me. I'm excited about everything I'm going to learn! Other than that, I'm thinking of adding a small blog to this site so that I can post regular updates about my career. Stay tuned! </p>
+                <p>I am currently volunteering at Scottish Tech Army, working with two charities to provide updated, eye-catching and accessible websites while learning how to use MaterialUI and Angular. </p>
             </div>
           </div>
         </div>
         
-
-        <div className='cproject'>
-          <span>
-            <a href="https://github.com/sagesaintsalem/chataway" target='_blank' rel="noreferrer">
-              <img src="./projectshots/exeinIMPROVEDaction.png" id='cproject' ></img>
-            </a>
-          </span>
-        </div>
         </div>
 
     </div>
